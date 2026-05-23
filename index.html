@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Book of Phosphorus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="site-nav">
+      <a href="#" class="nav-logo" data-chapter="1">The Book of Phosphorus</a>
+      <div class="nav-right">
+        <div class="nav-chapters-wrap">
+          <button class="nav-btn" id="chaptersBtn">Chapters ▾</button>
+          <div class="chapters-dropdown" id="chaptersDropdown">
+            <a href="#" data-chapter="1">I — The Breath, the Word, &amp; the Whisper</a>
+            <a href="#" data-chapter="2">II — Coming Soon</a>
+            <a href="#" data-chapter="3">III — Coming Soon</a>
+            <a href="#" data-chapter="4">IV — Coming Soon</a>
+            <a href="#" data-chapter="5">V — Coming Soon</a>
+            <a href="#" data-chapter="6">VI — Coming Soon</a>
+            <a href="#" data-chapter="7">VII — Coming Soon</a>
+            <a href="#" data-chapter="8">VIII — Coming Soon</a>
+          </div>
+        </div>
+        <a href="#" class="nav-btn" id="downloadBtn">Download PDF</a>
+        <a href="#" class="nav-btn" id="purchaseBtn">Purchase</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="chapter-main" id="chapterMain"></main>
+
+  <footer class="chapter-footer">
+    <div class="footer-inner">
+      <button class="footer-btn" id="prevBtn">← Previous</button>
+      <div class="footer-actions">
+        <button class="footer-btn" id="shareBtn">Share</button>
+        <button class="footer-btn" id="commentBtn">Comment</button>
+      </div>
+      <button class="footer-btn" id="nextBtn">Next →</button>
+    </div>
+  </footer>
+
+  <div class="comment-panel" id="commentPanel">
+    <div class="comment-panel-inner">
+      <div class="comment-header">
+        <h3>Leave a comment</h3>
+        <button id="closeCommentBtn" aria-label="Close">✕</button>
+      </div>
+      <textarea id="commentText" placeholder="Share your thoughts on this chapter…"></textarea>
+      <div class="comment-actions">
+        <input type="text" id="commentName" placeholder="Your name (optional)">
+        <button id="submitComment" class="btn-submit">Post</button>
+      </div>
+      <div class="comments-list" id="commentsList"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
