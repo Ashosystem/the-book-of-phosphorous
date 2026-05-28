@@ -306,6 +306,7 @@ function renderChapter(ch) {
     return `<p class="coming-soon">Chapter ${toRoman(ch.n)} is coming soon.</p>`;
   }
 
+  let verse = 0;
   const html = ch.sections.map(s => {
     if (s.t === 'img') {
       return `<div class="chapter-image">${duosophis()}</div>`;
@@ -313,8 +314,13 @@ function renderChapter(ch) {
     const cls = s.t === 'ci' ? 'stanza centered italic'
               : s.t === 'c'  ? 'stanza centered'
               : 'stanza left';
+    let mark = '';
+    if (s.t === 'l') {
+      verse++;
+      mark = `<span class="verse-num">${ch.n}:${verse}</span>`;
+    }
     const lines = s.l.map(line => `<p>${escHtml(line)}</p>`).join('');
-    return `<div class="${cls}">${lines}</div>`;
+    return `<div class="${cls}">${mark}${lines}</div>`;
   }).join('');
 
   return html;

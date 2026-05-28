@@ -151,7 +151,27 @@ body {
   margin-bottom: 2.2em;
 }
 
-.stanza.left { text-align: left; }
+.stanza.left { text-align: left; position: relative; }
+
+.verse-num {
+  position: absolute;
+  left: -3.4em;
+  top: 0.35em;
+  font-size: 0.72em;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  font-variant-numeric: tabular-nums;
+  user-select: none;
+}
+
+@media (max-width: 760px) {
+  .verse-num {
+    position: static;
+    display: block;
+    margin-bottom: 0.4em;
+    font-size: 0.7em;
+  }
+}
 
 .stanza.centered { text-align: center; }
 
