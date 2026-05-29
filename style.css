@@ -151,16 +151,26 @@ body {
   margin-bottom: 2.2em;
 }
 
-.stanza.left { text-align: left; }
+.stanza.left {
+  display: grid;
+  grid-template-columns: 2.6rem 1fr;
+  column-gap: 0.75rem;
+}
 
 .verse-num {
-  font-size: 0.62em;
-  vertical-align: 0.55em;
+  justify-self: end;
+  align-self: start;
+  margin-top: 0.3em;
+  font-size: 0.6em;
   color: var(--text-muted);
   letter-spacing: 0.03em;
   font-variant-numeric: tabular-nums;
   user-select: none;
-  margin-right: 0.4em;
+  background: var(--bg-raised);
+  border-radius: 4px;
+  padding: 2px 6px;
+  line-height: 1.5;
+  white-space: nowrap;
 }
 
 .stanza.centered { text-align: center; }

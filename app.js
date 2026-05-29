@@ -319,12 +319,8 @@ function renderChapter(ch) {
       verse++;
       mark = `<span class="verse-num">${ch.n}:${verse}</span>`;
     }
-    const lines = s.l.map((line, i) =>
-      (i === 0 && mark)
-        ? `<p>${mark}${escHtml(line)}</p>`
-        : `<p>${escHtml(line)}</p>`
-    ).join('');
-    return `<div class="${cls}">${lines}</div>`;
+    const lines = s.l.map(line => `<p>${escHtml(line)}</p>`).join('');
+    return `<div class="${cls}">${mark}<div class="stanza-lines">${lines}</div></div>`;
   }).join('');
 
   return html;
