@@ -2543,7 +2543,8 @@ const CHAPTERS = [
     n: 9,
     title: "Idiomata of Duosophia",
     sections: [
-      { t: "ci", l: [ "And they said,",
+      { t: "ci", l: [
+          "And they said,",
           "“We have heard your voice",
           "And received your vision",
           "And yet do not know her nature",
@@ -2551,19 +2552,25 @@ const CHAPTERS = [
           "The one you call Duosophia",
           "Tell us of her”",
           "And voice smiled",
-          "And whispered softly,",
+          "And whispered softly,"
+        ] },
+      { t: "l", l: [
           "She is the one made of light",
           "Who marks the way to Rhagma",
           "Who emanates the path of Phosphorus",
           "Who deceived thrice the one called Kakos",
-          "So that you might defy his grip.",
+          "So that you might defy his grip."
+        ] },
+      { t: "l", l: [
           "She is the one called Duosophia",
           "The second wisdom",
           "The deus ex machina",
           "Whose arrival cannot be relied upon",
           "But invoked only through acts",
-          "Acts which are equal to her majesty." ] },
-      { t: "l", l: [ "And her names are many",
+          "Acts which are equal to her majesty."
+        ] },
+      { t: "l", l: [
+          "And her names are many",
           "She is the one named Epinoia of light",
           "And she is the one named Hendyo",
           "And she is the one named Albion",
@@ -2571,7 +2578,9 @@ const CHAPTERS = [
           "And she is the one named Mother of the Living",
           "And she is the one named Hetrogyne",
           "And she will answer to the name she is given",
-          "For she cares only for their deeds.",
+          "For she cares only for their deeds."
+        ] },
+      { t: "l", l: [
           "And she emanates herself in three aspects",
           "And each is folded into the other",
           "And you will be told of her folded form",
@@ -2579,39 +2588,51 @@ const CHAPTERS = [
           "If nothing else",
           "She is that which calls you to love",
           "She is that which calls you to know equality",
-          "And she is that which calls you to adore that which is different.",
+          "And she is that which calls you to adore that which is different."
+        ] },
+      { t: "l", l: [
           "You know this to be true",
           "That when you are loved",
           "Treated equally",
-          "And your difference is held high" ] },
-      { t: "ci", l: [ "You feel the glow of Duosophia",
+          "And your difference is held high",
+          "You feel the glow of Duosophia",
           "The call of paradise",
           "Of a place where the good is unanimous",
           "A place where the good rules",
           "But does not rule",
-          "For there is no need for rule in such a place.",
+          "For there is no need for rule in such a place."
+        ] },
+      { t: "l", l: [
           "And her shards are here",
           "Even now",
           "Casting their shadow",
           "In this place ruled by demons",
-          "Whenever you feel that glow.",
+          "Whenever you feel that glow."
+        ] },
+      { t: "l", l: [
           "And it is not humanity who needs redemption",
           "But Sophia’s eer",
           "We need only to validate",
           "Her whisper",
-          "Which provides a key.",
+          "Which provides a key."
+        ] },
+      { t: "l", l: [
           "And it was said",
           "“She taught Adam about the way he could ascend",
           "Which is the way he had descended”",
           "And his body was made by Kakos",
-          "And spirit by the Pleroma." ] },
-      { t: "ci", l: [ "And ascent therefore",
+          "And spirit by the Pleroma."
+        ] },
+      { t: "l", l: [
+          "And ascent therefore",
           "Requires of us two labours",
           "The first is confrontation with Kakos",
           "By means of the body",
           "The other is the embrace of Sophia",
           "By means of the embodiment of her spirit",
-          "Here on earth.",
+          "Here on earth."
+        ] },
+      { t: "ci", l: [
           "And they said,",
           "“If she is a being of such power",
           "One who can trick Kakos thrice",
@@ -2620,96 +2641,137 @@ const CHAPTERS = [
           "At the end of time",
           "And not intervene now",
           "To save us from our condition”",
-          "And they voice replied,",
+          "And they voice replied,"
+        ] },
+      { t: "l", l: [
           "Power is a tool of domination",
           "A means to impose",
           "And an invention of Kakos",
           "It can surely be used for good",
-          "But it is not an aspect of Duosophia" ] },
-      { t: "ci", l: [ "Nor her proficiency.",
+          "But it is not an aspect of Duosophia",
+          "Nor her proficiency."
+        ] },
+      { t: "l", l: [
           "She must await her call",
           "Beyond the threshold",
           "Until we fulfil our duty",
-          "And upend the tower.",
+          "And upend the tower."
+        ] },
+      { t: "l", l: [
           "Only we",
           "That chimera of light and dark",
           "Of wisdom and ignorance",
           "Of adoration and abhoration",
-          "Can use force to bring peace into being.",
+          "Can use force to bring peace into being."
+        ] },
+      { t: "l", l: [
           "Once Dromos is constructed",
           "The Phosphours path followed",
           "And Rhagma is found",
           "Only then",
           "Will we find Duosophia waiting",
           "Patiently waiting",
-          "Never to leave again.",
+          "Never to leave again."
+        ] },
+      { t: "ci", l: [
           "And they said,",
           "“We are alone in her absence”",
-          "And the voice said," ] },
-      { t: "l", l: [ "Not so",
+          "And the voice said,"
+        ] },
+      { t: "l", l: [
+          "Not so",
           "For her light can be heard",
           "And her shadow constructed",
-          "Here and now.",
+          "Here and now."
+        ] },
+      { t: "l", l: [
           "But we cannot rely on another",
           "To bring paradise to us",
           "For we must make one of our own",
           "In her name",
-          "And it will be called Dromos.",
+          "And it will be called Dromos."
+        ] },
+      { t: "l", l: [
           "We must hold that mirror",
           "Up to the shining thread",
           "And build an image of Duosophia",
-          "Which will shelter us through his storm.",
+          "Which will shelter us through his storm."
+        ] },
+      { t: "l", l: [
           "Dromos is her emblem",
           "And once it is complete",
           "She will emerge",
           "But it cannot be provided to us",
-          "But constructed through our acts alone.",
-          "And it has been built before" ] },
-      { t: "l", l: [ "In little parts",
+          "But constructed through our acts alone."
+        ] },
+      { t: "l", l: [
+          "And it has been built before",
+          "In little parts",
           "Defying his iron law",
           "Sometimes sustained for a while",
           "Before being destroyed",
           "Or coopted",
-          "Or merely remaining modest.",
+          "Or merely remaining modest."
+        ] },
+      { t: "l", l: [
           "But it can grow large",
           "If only we push for the impossible",
-          "And look the enemy in the eye.",
+          "And look the enemy in the eye."
+        ] },
+      { t: "l", l: [
           "She is in everything",
           "In tiny reflections",
           "Limited by his power",
           "But her size is as little",
-          "As his power is great.",
+          "As his power is great."
+        ] },
+      { t: "l", l: [
           "And so she must be summoned",
           "Brought into being",
-          "By the force of will.",
+          "By the force of will."
+        ] },
+      { t: "l", l: [
           "She calls us",
           "Beckons us",
-          "Guides us with her light" ] },
-      { t: "ci", l: [ "But we must answer",
-          "And must walk the path ourselves.",
+          "Guides us with her light",
+          "But we must answer",
+          "And must walk the path ourselves."
+        ] },
+      { t: "ci", l: [
           "“And what kind of God",
           "Cannot act",
           "And waits hopefully",
           "For us to act in her stead?”",
-          "The reply said,",
+          "The reply said,"
+        ] },
+      { t: "l", l: [
           "This graceful God",
           "If she is a God",
           "Is no creator",
-          "But rather a creation yet to come.",
+          "But rather a creation yet to come."
+        ] },
+      { t: "l", l: [
           "She is no divine agent",
           "But a womb",
-          "Waiting for us to return to her.",
+          "Waiting for us to return to her."
+        ] },
+      { t: "l", l: [
           "She offers no challenge",
           "To Gods nor guardians",
           "But only to that entity",
           "Which rules of the earth",
-          "And keep us from flourishing." ] },
-      { t: "l", l: [ "She offers a resting place",
+          "And keep us from flourishing."
+        ] },
+      { t: "l", l: [
+          "She offers a resting place",
           "A destination",
           "But it is us who can arrive there",
-          "And construct a path through the darkness.",
+          "And construct a path through the darkness."
+        ] },
+      { t: "l", l: [
           "Phosphorus is that path",
-          "And Dromos the vehicle." ] }
+          "And Dromos the vehicle."
+        ] }
     ]
   },
   {
