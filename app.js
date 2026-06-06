@@ -287,7 +287,8 @@ const CHAPTERS = [
     n: 2,
     title: "The Sheer & Rhagma",
     sections: [
-      { t: "ci", l: [ "They had sat and listened to the words",
+      { t: "ci", l: [
+          "They had sat and listened to the words",
           "And they felt doubt",
           "And said",
           "“Is it not unjust to seek destruction, even of that which is unjust?",
@@ -298,19 +299,27 @@ const CHAPTERS = [
           "“Why me?",
           "Why here?",
           "Why now?”",
-          "And the voice smiled,",
+          "And the voice smiled,"
+        ] },
+      { t: "l", l: [
           "You doubt because you are wise",
           "Every doubt holds a seed of wisdom",
           "But doubt doubt too",
-          "Else become its vessel.",
+          "Else become its vessel."
+        ] },
+      { t: "l", l: [
           "Voices lie",
           "By malice and by error",
-          "And eyes too deceive." ] },
-      { t: "l", l: [ "But how else to discern the world",
+          "And eyes too deceive."
+        ] },
+      { t: "l", l: [
+          "But how else to discern the world",
           "Than to consider sights and sounds",
           "And judge their correspondence",
-          "With what is known to be true?",
-          "Then the voice said,",
+          "With what is known to be true?"
+        ] },
+      { t: "ci", l: [ "Then the voice said," ] },
+      { t: "l", l: [
           "As for time",
           "You live in an era",
           "In which truth has been subsumed",
@@ -319,44 +328,66 @@ const CHAPTERS = [
           "And suffering is bountiful",
           "And worthy narrative is in decline",
           "And the gods have grown silent",
-          "And the clock approaches midnight.",
+          "And the clock approaches midnight."
+        ] },
+      { t: "ci", l: [
           "Then there was silence for a moment or two",
           "And the voice stared deeply into them",
-          "And said,",
+          "And said,"
+        ] },
+      { t: "l", l: [
           "Who is it who rules the world?",
           "And how did they ascend to greatness?",
-          "What acts did they perform to rise?" ] },
-      { t: "l", l: [ "And what kind of world made those men thrive?",
-          "And what kind of world did they leave?",
+          "What acts did they perform to rise?"
+        ] },
+      { t: "l", l: [
+          "And what kind of world made those men thrive?",
+          "And what kind of world did they leave?"
+        ] },
+      { t: "l", l: [
           "You know the answers",
           "Even as you recoil",
-          "And close your eyes.",
+          "And close your eyes."
+        ] },
+      { t: "l", l: [
           "You know what kind of men they are",
           "And that they are not men at all",
-          "But demons.",
+          "But demons."
+        ] },
+      { t: "l", l: [
           "They contain no spark",
           "But something else entire",
           "The name of which I cannot say",
           "That corrosive catalyst",
           "That parasitic spirit",
           "Which infects the children of Kakos",
-          "Must be blotted out.",
+          "Must be blotted out."
+        ] },
+      { t: "l", l: [
           "They know.",
           "They know what kind of lives they lead.",
           "And the price of their wealth.",
           "They know that we are not all one",
-          "That there are teams" ] },
-      { t: "l", l: [ "And theirs is not yours.",
+          "That there are teams"
+        ] },
+      { t: "l", l: [
+          "And theirs is not yours.",
           "They know the sound of war",
-          "And that there is no victory that is not total.",
+          "And that there is no victory that is not total."
+        ] },
+      { t: "l", l: [
           "If you do not know what they know",
           "It is not my judgment that you should doubt",
-          "But your own.",
+          "But your own."
+        ] },
+      { t: "l", l: [
           "They build machines",
           "And they demand reverence",
           "And they are awesome",
           "And they devour nature's magnificence",
-          "And they feast on innocence.",
+          "And they feast on innocence."
+        ] },
+      { t: "l", l: [
           "And while their machines whirl",
           "Some of them writhe in ecstasy",
           "In orgiastic pleasure",
@@ -365,13 +396,19 @@ const CHAPTERS = [
           "While others stare blankly and motionless",
           "Feeling nothing",
           "As they extract",
-          "Mana from Earth’s dying corpse." ] },
-      { t: "ci", l: [ "Evil is real",
+          "Mana from Earth’s dying corpse."
+        ] },
+      { t: "l", l: [
+          "Evil is real",
           "And it predominates",
-          "And it cannot be reformed.",
+          "And it cannot be reformed."
+        ] },
+      { t: "ci", l: [
           "And they said",
           "“Truly, the world is rife with sick individuals”",
-          "To which the voice said,",
+          "To which the voice said,"
+        ] },
+      { t: "l", l: [
           "So credulous to think",
           "Only a few fruits are rotten",
           "When the tree entire",
@@ -381,65 +418,91 @@ const CHAPTERS = [
           "All its lineage is infected",
           "In totality.",
           "And the edifice must thereby be felled",
-          "If sweet fruit is what is desired.",
+          "If sweet fruit is what is desired."
+        ] },
+      { t: "l", l: [
           "The sickness of which you speak",
           "Did not hijack a kindly machine",
           "It did not infect a pure body",
-          "It constructed the foundations upon which it was built." ] },
-      { t: "ci", l: [ "Do you think it could have been otherwise?",
+          "It constructed the foundations upon which it was built."
+        ] },
+      { t: "l", l: [
+          "Do you think it could have been otherwise?",
           "That those who rise above the rest",
           "And rule over those below",
           "And feel the call to construct kingdoms",
           "And manifest a world in their own image",
-          "Could be saints?",
+          "Could be saints?"
+        ] },
+      { t: "l", l: [
           "No.",
           "As long as the world",
           "Is made and unmade",
           "By men in high towers,",
           "As Kakos decreed,",
-          "You will live in subjugation.",
+          "You will live in subjugation."
+        ] },
+      { t: "ci", l: [
           "They said",
           "“If what you say is true",
           "And every leader is bound to cruelty",
           "And greatness is only to be measured by its malevolence",
           "Why should I stay and listen",
           "When I could turn away and weep?”",
-          "And the voice said,",
+          "And the voice said,"
+        ] },
+      { t: "l", l: [
           "Did I not tell you",
-          "Of Sophia’s word" ] },
-      { t: "l", l: [ "And the divine symmetry",
-          "That built his tower on uncertain ground?",
+          "Of Sophia’s word"
+        ] },
+      { t: "l", l: [
+          "And the divine symmetry",
+          "That built his tower on uncertain ground?"
+        ] },
+      { t: "l", l: [
           "Kakos predominates",
           "And it is right to make you weep",
           "But he is merely a husk",
           "A lesser god",
-          "Whose towers rise as high as they might fall.",
+          "Whose towers rise as high as they might fall."
+        ] },
+      { t: "l", l: [
           "If sparks could only ignite",
           "That paper tiger",
           "Another order will be revealed",
-          "In those fertile ashes.",
+          "In those fertile ashes."
+        ] },
+      { t: "l", l: [
           "It was always with you",
           "Everywhere in small places",
-          "Wherever that suffocating grip can't reach.",
+          "Wherever that suffocating grip can't reach."
+        ] },
+      { t: "l", l: [
           "You ask how anything could overcome such strength.",
           "I ask how strong a thing can be",
           "That cannot kill",
           "Something so weak",
           "So tiny",
-          "So low" ] },
-      { t: "l", l: [ "As love between strangers.",
+          "So low"
+        ] },
+      { t: "l", l: [
+          "As love between strangers.",
           "That cannot silence",
           "Those with no voice.",
           "That cannot excise resistance",
           "From those with no power",
           "No advocate",
           "No institution",
-          "No cards to play.",
+          "No cards to play."
+        ] },
+      { t: "l", l: [
           "What kind of god is that?",
           "Not a god at all",
           "But a mere trickster",
           "An illusionist",
-          "Whose spell must be broken.",
+          "Whose spell must be broken."
+        ] },
+      { t: "l", l: [
           "There is another force at work",
           "Quieter",
           "Smaller",
@@ -447,37 +510,53 @@ const CHAPTERS = [
           "But more resilient",
           "More eternal",
           "Than the Kakodynamia",
-          "That constructed that watchful pillar." ] },
-      { t: "ci", l: [ "That force has many names",
+          "That constructed that watchful pillar."
+        ] },
+      { t: "l", l: [
+          "That force has many names",
           "Those of movements, disciplines, sects, principles, virtues, knowings",
           "But they are unified",
           "In their deference",
           "Of love",
           "Equality",
-          "And the adoration of difference.",
+          "And the adoration of difference."
+        ] },
+      { t: "l", l: [
           "To put it otherwise",
           "They are those who desire",
           "Nothing more",
           "Than to share in the garden",
-          "Of Duosophia.",
+          "Of Duosophia."
+        ] },
+      { t: "l", l: [
           "And it manifests in many forms",
           "And many hear its call",
           "And they persist in their pursuit",
           "Despite the crooked law",
-          "That plagues this world.",
+          "That plagues this world."
+        ] },
+      { t: "ci", l: [
           "And they asked",
           "“What will it take to bring such a world into being?",
           "One that venerates love, equality and the adoration of difference",
-          "Over such powers as rule this world today?" ] },
-      { t: "l", l: [ "Need we only wait",
+          "Over such powers as rule this world today?"
+        ] },
+      { t: "ci", l: [
+          "Need we only wait",
           "For this tardy angel",
-          "To save us from our lot?”",
+          "To save us from our lot?”"
+        ] },
+      { t: "l", l: [
           "If you sit and wait",
           "One eventuality is bound to befall",
-          "All the ones you love and are yet to love.",
+          "All the ones you love and are yet to love."
+        ] },
+      { t: "l", l: [
           "Innumerable eventualities",
           "Which all amount to one.",
-          "I will show you.",
+          "I will show you."
+        ] },
+      { t: "ci", l: [
           "And the voice lifted them up",
           "And took them to the end of time",
           "And it was very soon indeed",
@@ -489,8 +568,10 @@ const CHAPTERS = [
           "And they saw the oceans boiling",
           "And black rain pouring from the clouds",
           "And sickness saturated the air",
-          "And meat was plentiful but could not be consumed" ] },
-      { t: "l", l: [ "And the sorceries of man all failed",
+          "And meat was plentiful but could not be consumed"
+        ] },
+      { t: "ci", l: [
+          "And the sorceries of man all failed",
           "And there was deathly darkness",
           "And there was burning light",
           "And there were no birds in the sky",
@@ -504,15 +585,19 @@ const CHAPTERS = [
           "Envied the ones who had succumbed.",
           "And the spark had faded",
           "And turned to ash.",
-          "Then the voice said,",
-          "This is the Sheer.",
+          "Then the voice said,"
+        ] },
+      { t: "l", l: [ "This is the Sheer." ] },
+      { t: "ci", l: [
           "And they saw it again",
           "But it was different.",
           "Now it appeared to them as a great wall",
           "And it proceeded into the heavens",
           "And down towards the depths",
-          "And to the west" ] },
-      { t: "l", l: [ "And to the east",
+          "And to the west"
+        ] },
+      { t: "ci", l: [
+          "And to the east",
           "And it was boundless.",
           "An infinite edifice",
           "Which could not be overcome",
@@ -522,77 +607,113 @@ const CHAPTERS = [
           "And it was dark",
           "And it was impenetrable.",
           "And they were filled with dread.",
-          "The voice said,",
+          "The voice said,"
+        ] },
+      { t: "l", l: [
           "You have seen the Apeirokremnos.",
           "The death of all ends",
-          "And we call it the Sheer.",
+          "And we call it the Sheer."
+        ] },
+      { t: "l", l: [
           "This is the destination",
           "Towards which Kakodynamia inevitably drives.",
           "His engine can proceed in only one direction",
           "Arrival at the sheer will come",
           "One way or another",
-          "One day or another.",
-          "He knows this is where he heads" ] },
-      { t: "l", l: [ "He knows the consequences of his whirring",
+          "One day or another."
+        ] },
+      { t: "l", l: [ "He knows this is where he heads" ] },
+      { t: "l", l: [
+          "He knows the consequences of his whirring",
           "And he will never stop",
-          "Not of his own accord.",
+          "Not of his own accord."
+        ] },
+      { t: "l", l: [
           "He has designed myths",
           "To speak of the Sheer",
           "To explain it",
           "To render it fated",
-          "Or to embellish it with meaning.",
+          "Or to embellish it with meaning."
+        ] },
+      { t: "l", l: [
           "But it is anything but meaningful",
           "It is the inevitability",
           "Of constructing a machine",
           "Which devours meaning",
-          "And leaves an abyss in its wake.",
+          "And leaves an abyss in its wake."
+        ] },
+      { t: "l", l: [
           "The children of Kakos",
           "Are touched by his malevolence",
           "And construct his tower higher",
-          "And pull the Sheer ever closer.",
+          "And pull the Sheer ever closer."
+        ] },
+      { t: "l", l: [
           "It is those demons",
           "By their words and by their actions",
-          "That bring the Sheer to humanity’s door." ] },
-      { t: "l", l: [ "Kakos tempts",
+          "That bring the Sheer to humanity's door."
+        ] },
+      { t: "l", l: [
+          "Kakos tempts",
           "Kakos enables",
           "Kakos encourages,",
-          "But he does not act.",
+          "But he does not act."
+        ] },
+      { t: "l", l: [
           "It is those who hear his call",
           "Who grasp his bribes",
           "Who hoard his bounty",
-          "That are his limbs.",
+          "That are his limbs."
+        ] },
+      { t: "l", l: [
           "They are the ones",
           "Who act",
           "Who drag us forward",
           "Who pull the crank",
-          "Who turn the windlass.",
+          "Who turn the windlass."
+        ] },
+      { t: "l", l: [
           "There are many paths",
           "Which lead here.",
           "Many ways for the divine spark",
-          "To be burned out.",
+          "To be burned out."
+        ] },
+      { t: "l", l: [
           "How we reach the Sheer",
-          "Cannot be known in exactitude" ] },
-      { t: "l", l: [ "And it does not matter",
+          "Cannot be known in exactitude"
+        ] },
+      { t: "l", l: [
+          "And it does not matter",
           "Which path we take",
           "Since all roads taken by the Kakodynamia",
-          "Lead us to the same destination.",
+          "Lead us to the same destination."
+        ] },
+      { t: "ci", l: [
           "They stared blankly",
           "Upon the horrors they had witnessed",
           "And upon the Sheer",
           "And upon the promise of their fatedness",
           "Still ringing in their ears",
-          "And they began to weep.",
+          "And they began to weep."
+        ] },
+      { t: "l", l: [
           "Now you see",
           "What will befall humanity",
           "On the impending course",
           "That was chosen by Kakos",
-          "And made real by his demons.",
+          "And made real by his demons."
+        ] },
+      { t: "l", l: [
           "But look closer",
           "And see",
-          "The texture of that fate up close.",
+          "The texture of that fate up close."
+        ] },
+      { t: "ci", l: [
           "And they were drawn in",
-          "Closer to the sheer" ] },
-      { t: "l", l: [ "And its darkness was suffocating",
+          "Closer to the sheer"
+        ] },
+      { t: "ci", l: [
+          "And its darkness was suffocating",
           "And its scale was immeasurable",
           "And it was terrifying.",
           "But then",
@@ -601,64 +722,90 @@ const CHAPTERS = [
           "A tiny fissure",
           "The smallest crack",
           "Barely visible",
-          "But there nonetheless." ] },
-      { t: "ci", l: [ "And they peered closely",
+          "But there nonetheless."
+        ] },
+      { t: "ci", l: [
+          "And they peered closely",
           "At the illuminated cleft",
           "Trying to spy",
           "What lay beyond",
-          "And the voice said," ] },
-      { t: "ci", l: [ "You have seen the Rhagma",
+          "And the voice said,"
+        ] },
+      { t: "l", l: [
+          "You have seen the Rhagma",
           "The flaw in your fated doom",
           "The eye of the needle",
-          "Through which you might hope to break.",
+          "Through which you might hope to break."
+        ] },
+      { t: "l", l: [
           "While you cannot see",
           "What lies beyond",
           "That narrow gate",
           "I promise you this",
-          "It is magnificent.",
+          "It is magnificent."
+        ] },
+      { t: "l", l: [
           "Praise the pleroma",
           "For forcing the Rhagma into being",
           "Through Sophia’s lips",
           "Her breath",
           "Her word",
           "And now her whisper",
-          "Upon which you now gaze.",
+          "Upon which you now gaze."
+        ] },
+      { t: "ci", l: [
           "And they said",
           "“How might I praise them?”",
-          "And the voice answered," ] },
-      { t: "l", l: [ "Praise the pleroma",
+          "And the voice answered,"
+        ] },
+      { t: "l", l: [
+          "Praise the pleroma",
           "Not through quiet reverence",
           "Nor through ecstatic dance",
           "But through making acts",
           "Which might bring humanity",
           "Into greater proximity",
           "With the light",
-          "Which passes through Rhagma.",
+          "Which passes through Rhagma."
+        ] },
+      { t: "l", l: [
           "Divert from the Sheer",
           "Through acts of defiance",
           "Acts of revolution",
           "Acts of sabotage",
-          "Until the tower is unmade.",
+          "Until the tower is unmade."
+        ] },
+      { t: "l", l: [
           "And approach Rhagma",
           "Through acts of love",
           "Acts of equality",
           "Acts adoring of difference",
-          "Until Dromos is made.",
+          "Until Dromos is made."
+        ] },
+      { t: "l", l: [
           "Praise the pleroma",
-          "By amplifying Sophia’s whisper",
-          "Until it is deafening" ] },
-      { t: "ci", l: [ "Until the tower shakes",
-          "And Kakos quakes.",
+          "By amplifying Sophia's whisper",
+          "Until it is deafening"
+        ] },
+      { t: "l", l: [
+          "Until the tower shakes",
+          "And Kakos quakes."
+        ] },
+      { t: "l", l: [
           "Make him learn that he is not a god",
           "But merely an abuser",
           "A coward",
-          "Whose catalyst is abominable.",
+          "Whose catalyst is abominable."
+        ] },
+      { t: "l", l: [
           "Too senseless to be omniscient",
           "Too gutless to be omnipotent",
           "Too myopic to be omnipresent",
           "Too flawed to be totalising",
           "In any act",
-          "But omnicide.",
+          "But omnicide."
+        ] },
+      { t: "ci", l: [
           "And they stared longingly",
           "Towards that fissure",
           "Which was a spark of hope",
@@ -666,42 +813,61 @@ const CHAPTERS = [
           "And the voice took them back",
           "To the heath",
           "Where they sat",
-          "And the voice said," ] },
-      { t: "l", l: [ "Now you have seen",
+          "And the voice said,"
+        ] },
+      { t: "l", l: [
+          "Now you have seen",
           "The Sheer and the Rhagma",
           "And your duty too",
           "To construct the Dromos",
           "That holy road",
-          "Towards sad history’s end.",
+          "Towards sad history's end."
+        ] },
+      { t: "l", l: [
           "Learn the way to Rhagma.",
           "Study its shape",
           "Its character",
-          "The way it sounds.",
+          "The way it sounds."
+        ] },
+      { t: "l", l: [
           "Learn to build Dromos",
           "The conditions of its growth",
           "The manner of its development",
-          "The means of its flourishing",
+          "The means of its flourishing"
+        ] },
+      { t: "l", l: [
           "Learn it by picturing it",
           "By envisioning it",
           "By articulating it",
-          "By approximating its contours.",
+          "By approximating its contours."
+        ] },
+      { t: "l", l: [
           "Learn it by doing it",
-          "By stepping into the dark" ] },
-      { t: "ci", l: [ "By listening",
-          "And by failing.",
+          "By stepping into the dark"
+        ] },
+      { t: "l", l: [
+          "By listening",
+          "And by failing."
+        ] },
+      { t: "ci", l: [
           "And they said",
           "“How can we learn the way?",
           "How will we find the path",
-          "Leading to Rhagma?”",
+          "Leading to Rhagma?”"
+        ] },
+      { t: "l", l: [
           "You will learn to build Dromos",
           "Towards that divine crack",
           "By spying its faint light",
-          "By hearing its sweet tonality.",
+          "By hearing its sweet tonality."
+        ] },
+      { t: "l", l: [
           "You will be called",
           "Toward Rhagma",
           "If you are open",
           "And set to perceive",
-          "The path of Phosphorus." ] }
+          "The path of Phosphorus."
+        ] }
     ]
   },
   {
