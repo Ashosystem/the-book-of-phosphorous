@@ -2202,7 +2202,8 @@ const CHAPTERS = [
     n: 8,
     title: "Pyrgogenesis",
     sections: [
-      { t: "ci", l: [ "And they said,",
+      { t: "ci", l: [
+          "And they said,",
           "“You have told us of ends",
           "Not tell us of beginnings",
           "How did Kakos comes to be our Leviathan?”",
@@ -2212,27 +2213,37 @@ const CHAPTERS = [
           "And up and up",
           "Until they reached a small sphere",
           "And it was blank and formless",
-          "And the voice said,",
+          "And the voice said,"
+        ] },
+      { t: "l", l: [
           "See for yourself",
           "How the tower rose",
-          "And might once more fall.",
+          "And might once more fall."
+        ] },
+      { t: "ci", l: [
           "And the round canvas began to change before their eyes",
           "And they saw how the world was built",
           "With malevolence in mind",
           "But conditioned by beauty",
-          "And truth." ] },
-      { t: "l", l: [ "And beauty grew as life emerged",
+          "And truth."
+        ] },
+      { t: "ci", l: [
+          "And beauty grew as life emerged",
           "And so did suffering",
           "And beauty taught them to nurture and cooperate",
           "And malevolence taught them to dominate",
-          "And an unhappy balance was struck.",
+          "And an unhappy balance was struck."
+        ] },
+      { t: "ci", l: [
           "And then little people began to form",
           "And their compassion was great",
           "And their cruelty was unbounded",
           "And they saw divinity",
           "And they began to write stories",
           "To understand their purpose",
-          "And to justify their malevolence, too.",
+          "And to justify their malevolence, too."
+        ] },
+      { t: "ci", l: [
           "And among those orators",
           "Was one called Solomon",
           "And he told a compelling tale",
@@ -2242,73 +2253,105 @@ const CHAPTERS = [
           "And curses",
           "And command armies",
           "And become a God",
-          "And his compatriots liked the story very much." ] },
-      { t: "l", l: [ "And the man cleaned his cattle",
+          "And his compatriots liked the story very much."
+        ] },
+      { t: "ci", l: [
+          "And the man cleaned his cattle",
           "And saw within one’s dung",
           "A conspicuous shape",
           "And it appeared to him to resemble that spindle",
           "Such as the one from his story",
-          "And he felt in his heart that it held great power.",
+          "And he felt in his heart that it held great power."
+        ] },
+      { t: "ci", l: [
           "And he polished the strange emblem",
           "And showed it to his compatriots",
           "And they were intrigued",
           "And believed him to have been chosen",
-          "To deliver a wise message.",
+          "To deliver a wise message."
+        ] },
+      { t: "ci", l: [
           "And people gathered around Solomon",
           "And touched his hands",
           "For they had touched the emblem",
           "And they believed him to bring good luck",
-          "And indeed their luck did improve.",
+          "And indeed their luck did improve."
+        ] },
+      { t: "ci", l: [
           "And they built him a special throne",
           "Upon which he sat",
-          "To look over the community." ] },
-      { t: "ci", l: [ "And one day Solomon died",
+          "To look over the community."
+        ] },
+      { t: "ci", l: [
+          "And one day Solomon died",
           "And another man took the emblem",
-          "And he promised to continue Solomon’s path.",
+          "And he promised to continue Solomon’s path."
+        ] },
+      { t: "ci", l: [
           "And he said,",
           "“Construct for us a high spindle",
           "So that it might watch over us kindly",
           "And make visible our prestige”",
-          "And the members of the encampment gladly acquiesced.",
+          "And the members of the encampment gladly acquiesced."
+        ] },
+      { t: "ci", l: [
           "And what they constructed was a thing of beauty",
           "And it could be seen far and wide",
           "And the neighbouring encampments saw what they had built",
           "And they were in awe",
           "And they came unto its power",
-          "And they called the spindle Makros.",
+          "And they called the spindle Makros."
+        ] },
+      { t: "ci", l: [
           "And Makros was gracious and strong",
           "And food would appear at its roots",
           "And those who were hungry would go there",
-          "And be satisfied.",
+          "And be satisfied."
+        ] },
+      { t: "ci", l: [
           "And the others began to build spindles",
-          "And each of them varied in size" ] },
-      { t: "l", l: [ "But none were as big as Makros",
+          "And each of them varied in size"
+        ] },
+      { t: "ci", l: [
+          "But none were as big as Makros",
           "For when one grew taller",
-          "Makros grew too in equal measure.",
+          "Makros grew too in equal measure."
+        ] },
+      { t: "ci", l: [
           "Soon, spindles littered the land and filled the sky",
           "From here until the horizon",
-          "And it was right to call it an empire.",
+          "And it was right to call it an empire."
+        ] },
+      { t: "ci", l: [
           "And from the highest peak",
           "The one named Makros",
           "The face of the world could be seen as one",
           "And its gaze did see each of them",
           "And it could see which of them avoided its gaze",
-          "And it looked down on them.",
+          "And it looked down on them."
+        ] },
+      { t: "ci", l: [
           "Those who avoided the gaze of Makros",
           "And spoke unkind words in dark corners",
           "When they approach its roots",
           "Awaiting the nourishment upon which they had come to rely",
           "They found the roots dry and unopened",
-          "And they became hungry.",
+          "And they became hungry."
+        ] },
+      { t: "ci", l: [
           "But those who gave praise unto Makros",
-          "And beheld its authority" ] },
-      { t: "ci", l: [ "They ate well",
-          "And always found bounties at its foot.",
+          "And beheld its authority",
+          "They ate well",
+          "And always found bounties at its foot."
+        ] },
+      { t: "ci", l: [
           "And they became well organised",
           "And they would line up in neat rows",
           "And they would stand tall and still",
           "To provide meagre offerings",
-          "Of doting.",
+          "Of doting."
+        ] },
+      { t: "ci", l: [
           "And Makros grew suspicious of the ones who murmured",
           "And feared that they might grow a spindle of their own",
           "To exceed his stature",
@@ -2317,21 +2360,31 @@ const CHAPTERS = [
           "With ire and malevolence",
           "Which would surpass his own",
           "For they were many",
-          "And Makros was one alone.",
+          "And Makros was one alone."
+        ] },
+      { t: "ci", l: [
           "And then Makros said,",
           "“Speak no more”",
-          "And they were silent.",
-          "But there were still those who would murmur" ] },
-      { t: "ci", l: [ "And the sound was like knives in the ears of Makros",
+          "And they were silent."
+        ] },
+      { t: "ci", l: [
+          "But there were still those who would murmur"
+        ] },
+      { t: "ci", l: [
+          "And the sound was like knives in the ears of Makros",
           "But they spoke not of spindles",
           "For they were sickening to them",
-          "But of circles.",
+          "But of circles."
+        ] },
+      { t: "ci", l: [
           "And Makros said,",
           "“Those who tell of the ones who murmur will eat fivefold”",
           "But the murmurs only grew",
           "And there were those who said that Makros was hollow",
           "And the murmurs became talk and the talk became chatter",
-          "And Makros quaked.",
+          "And Makros quaked."
+        ] },
+      { t: "ci", l: [
           "And those who spoke",
           "And approached the roots of the spindle",
           "Would find them dry",
@@ -2340,15 +2393,21 @@ const CHAPTERS = [
           "And they blamed those who murmured",
           "But then one of them said,",
           "“How might we withhold that which we do not own?",
-          "Let us reach the roots as one and we will find our bounty.”",
+          "Let us reach the roots as one and we will find our bounty.”"
+        ] },
+      { t: "ci", l: [
           "And so the people marched as one towards the spindle",
-          "And they laid hands on its roots" ] },
-      { t: "ci", l: [ "But they found no food there",
+          "And they laid hands on its roots"
+        ] },
+      { t: "ci", l: [
+          "But they found no food there",
           "And Makros said,",
           "“Fear not my children",
           "The spindle gives you life",
           "It is here for you",
-          "And it has innovated.”",
+          "And it has innovated.”"
+        ] },
+      { t: "ci", l: [
           "And the people were confused and disoriented",
           "And they dispersed to their homes",
           "And in each of their homes they found a little spindle",
@@ -2356,15 +2415,23 @@ const CHAPTERS = [
           "And they at it",
           "And it provided them with food",
           "Though it was a little less than it had once been",
-          "And a little more dull of colour.",
+          "And a little more dull of colour."
+        ] },
+      { t: "ci", l: [
           "And then the little spindles began to whisper",
           "And they told each of them to be cautious",
           "And it helped them to form their thoughts",
           "And to suspect those who murmur",
-          "For they disrespect the demos.",
+          "For they disrespect the demos."
+        ] },
+      { t: "ci", l: [
           "And the ones who murmured found no food within",
-          "And the thin ones were shunned" ] },
-      { t: "ci", l: [ "For they oppose the consensus.",
+          "And the thin ones were shunned"
+        ] },
+      { t: "ci", l: [
+          "For they oppose the consensus."
+        ] },
+      { t: "ci", l: [
           "And Makros said,",
           "“It is the thing ones who made the food grey",
           "For they hate the colours of agreement",
@@ -2372,7 +2439,9 @@ const CHAPTERS = [
           "And stayed in their rooms",
           "And ate their dull food",
           "And they resented the thin ones",
-          "For they dared to murmur.",
+          "For they dared to murmur."
+        ] },
+      { t: "ci", l: [
           "And then a thin one",
           "Of no renown",
           "Had a strange vision",
@@ -2385,53 +2454,79 @@ const CHAPTERS = [
           "Until they met the foot a Makros",
           "Whose roots had become rotten",
           "And the thin one parsed the twisted spindle",
-          "And found nothing there within" ] },
-      { t: "ci", l: [ "And so they began to scale the spindle.",
+          "And found nothing there within"
+        ] },
+      { t: "ci", l: [
+          "And so they began to scale the spindle."
+        ] },
+      { t: "ci", l: [
           "And upon reaching Makros’ peak",
           "They could see the face of the earth",
           "And when they opened their mouth to speak",
           "They spoke to each of them as one",
           "And their voice echoed from the peak of Makros",
           "And it reverberated through every spindle",
-          "Until everyone had received the vision.",
+          "Until everyone had received the vision."
+        ] },
+      { t: "ci", l: [
           "And they said,",
           "“Open your eyes and see",
           "That for every spindle there is a circle",
           "And it resides below",
           "And in every circle there exists plentitudes",
-          "If only you would dig to find it.”",
+          "If only you would dig to find it.”"
+        ] },
+      { t: "ci", l: [
           "And the people mistook the voice for Makros",
           "For it was loud and bellowing",
           "And came from that which sanctioned voice",
           "And despite it sounding strange to them",
-          "They heeded its call.",
-          "And the people approached the spindles" ] },
-      { t: "l", l: [ "And they fell to their knees",
+          "They heeded its call."
+        ] },
+      { t: "ci", l: [
+          "And the people approached the spindles"
+        ] },
+      { t: "ci", l: [
+          "And they fell to their knees",
           "And they began to drag the dirt with their fingers",
-          "And everywhere they laboured.",
+          "And everywhere they laboured."
+        ] },
+      { t: "ci", l: [
           "And their excavation caused distress to the spindles",
           "And their foundations faltered",
           "And they cried out",
           "But no one heard their calls",
-          "For they were chattering ecstatically.",
+          "For they were chattering ecstatically."
+        ] },
+      { t: "ci", l: [
           "And then the spindles began to tumble",
           "One after the other",
           "And their disintegration was orchestral",
           "And at last Makros descended",
-          "And shattered into crystals.",
+          "And shattered into crystals."
+        ] },
+      { t: "ci", l: [
           "And beneath the disrupted dirt",
           "They began unearthing fruits",
           "So freshly scented",
           "And rich with colour",
           "And firm and ripe",
-          "As though they were platonic forms.",
-          "And the people rejoiced" ] },
-      { t: "ci", l: [ "And they held a great banquet",
+          "As though they were platonic forms."
+        ] },
+      { t: "ci", l: [
+          "And the people rejoiced"
+        ] },
+      { t: "ci", l: [
+          "And they held a great banquet",
           "And joyously recalled their foolishness",
-          "And told of boundless futures.",
+          "And told of boundless futures."
+        ] },
+      { t: "ci", l: [
           "And they cocked their heads towards the sky",
           "And there they saw a flat round emblem",
-          "And it was magnificent.",
+          "And it was magnificent."
+        ] },
+      { t: "ci", l: [
           "And so",
           "They took the shards of Makros",
           "Which had shattered everywhere among them",
@@ -2440,7 +2535,8 @@ const CHAPTERS = [
           "And there they stood",
           "Where they shouted",
           "As one,",
-          "“Praise be to Dyoplaty!" ] }
+          "“Praise be to Dyoplaty!"
+        ] }
     ]
   },
   {
