@@ -874,7 +874,8 @@ const CHAPTERS = [
     n: 3,
     title: "Idiomata of Phosphorus",
     sections: [
-      { t: "ci", l: [ "They remained there",
+      { t: "ci", l: [
+          "They remained there",
           "Upon the heath",
           "Eyes transfixed upon the voice",
           "Which spoke to them",
@@ -885,143 +886,213 @@ const CHAPTERS = [
           "And away from our abyssal terminus",
           "Tell us of that dutied trail",
           "Which draws faint sparks",
-          "Towards its light.”",
+          "Towards its light.”"
+        ] },
+      { t: "l", l: [
           "That thing you ask of",
           "Calling from the light",
           "To approach",
-          "We call it Phosphorus.",
+          "We call it Phosphorus."
+        ] },
+      { t: "l", l: [
           "And it goes by many names",
           "It is called Kryptophonia",
           "It is called Proklesis",
-          "It is called Amygphos" ] },
-      { t: "ci", l: [ "It is called Orthoscrysos",
-          "It is called the shining thread.",
+          "It is called Amygphos"
+        ] },
+      { t: "l", l: [
+          "It is called Orthoscrysos",
+          "It is called the shining thread."
+        ] },
+      { t: "l", l: [
           "It is the unbowed line",
           "With many obstructions",
           "Many diversions",
           "Which leads us to her",
           "Calling us towards",
-          "The gateway of Duosophia.",
+          "The gateway of Duosophia."
+        ] },
+      { t: "ci", l: [
           "And they said,",
           "“How can we hear the call of phosphorus",
           "In this meagre dessert",
           "Which sits sadly in the oppressive shadow",
           "Of the Sheer”",
-          "And the voice said,",
+          "And the voice said,"
+        ] },
+      { t: "l", l: [
           "To hear that call",
           "Is a mysterious thing",
           "A riddled knot",
           "Which must be unpicked",
-          "By each of you alone.",
-          "Through manoeuvres" ] },
-      { t: "ci", l: [ "And reflections on manoeuvres",
+          "By each of you alone."
+        ] },
+      { t: "l", l: [
+          "Through manoeuvres"
+        ] },
+      { t: "l", l: [
+          "And reflections on manoeuvres",
           "You might become aligned",
-          "With that faint light.",
+          "With that faint light."
+        ] },
+      { t: "l", l: [
           "Find intersection with her light",
           "Until convergence is accomplished",
           "And that spark becomes a flame",
-          "And that whisper becomes an exclamation.",
+          "And that whisper becomes an exclamation."
+        ] },
+      { t: "l", l: [
           "This is your duty",
           "To orient yourself",
           "And your fellows",
-          "With that shining thread.",
+          "With that shining thread."
+        ] },
+      { t: "l", l: [
           "To hear wisdom’s whisper",
           "Such that the path to Rhagma can be trod",
           "And Dromos built",
           "On the jagged road",
-          "Towards her gentle womb.",
+          "Towards her gentle womb."
+        ] },
+      { t: "ci", l: [
           "And they said",
           "“What is the form of the shining thread?",
           "What is the resemblance of Sophia’s whisper?”",
-          "The voice replied," ] },
-      { t: "l", l: [ "Sophia is not one",
+          "The voice replied,"
+        ] },
+      { t: "l", l: [
+          "Sophia is not one",
           "She is in excess of three",
           "And the three are",
-          "Passion, inspiration and contagion.",
+          "Passion, inspiration and contagion."
+        ] },
+      { t: "l", l: [
           "These are the registers",
           "Through which you might perceive",
           "And embody in your actions",
           "The golden light of Rhagma",
-          "Illuminating the Phosphorus road.",
+          "Illuminating the Phosphorus road."
+        ] },
+      { t: "l", l: [
           "The first shard of Phosphorus",
           "Its name is Passion",
           "It is the pavilion",
-          "Through which the spark speaks.",
+          "Through which the spark speaks."
+        ] },
+      { t: "l", l: [
           "Through Passion",
           "The heart is drawn",
-          "Into proximity with Rhagma.",
+          "Into proximity with Rhagma."
+        ] },
+      { t: "l", l: [
           "It is the pulling of the heart",
           "Towards the light",
-          "Down the crooked road of Phosphorus." ] },
-      { t: "l", l: [ "Passion needs nothing",
+          "Down the crooked road of Phosphorus."
+        ] },
+      { t: "l", l: [
+          "Passion needs nothing",
           "But persistence",
           "And steadfastness",
           "In the light of Phosphorus",
           "And the brick of Dromos",
-          "Which is laid in its stead.",
+          "Which is laid in its stead."
+        ] },
+      { t: "l", l: [
           "Passion asks for nothing",
           "To glimpse Duosophia",
           "But that the heart is strong",
-          "Which is the residence of the heart.",
+          "Which is the residence of the heart."
+        ] },
+      { t: "l", l: [
           "It is therefore Passion",
           "Upon which reliance must be made",
           "When all else fails",
-          "Listen to the call of the heart.",
+          "Listen to the call of the heart."
+        ] },
+      { t: "l", l: [
           "The second shard of Phosphorus",
           "Its name is inspiration",
           "It is the urn",
           "From which knowledge is concealed",
-          "And revealed." ] },
-      { t: "l", l: [ "Through Inspiration",
+          "And revealed."
+        ] },
+      { t: "l", l: [
+          "Through Inspiration",
           "The gut is drawn",
-          "Into proximity with Rhagma.",
+          "Into proximity with Rhagma."
+        ] },
+      { t: "l", l: [
           "It is the guttural resonance",
           "Which sings sweet harmony",
           "Beconing the spark",
-          "To follow the path of Phosphorus.",
+          "To follow the path of Phosphorus."
+        ] },
+      { t: "l", l: [
           "Inspiration cannot be summoned",
           "But only followed",
           "It arrives at its will",
-          "And withdraws if it is ignored.",
+          "And withdraws if it is ignored."
+        ] },
+      { t: "l", l: [
           "Inspiration asks",
           "That you follow its call",
           "And find the source",
-          "From which it comes.",
+          "From which it comes."
+        ] },
+      { t: "l", l: [
           "Inspirations cut",
           "Can be deep indeed",
           "And its repercussions",
-          "Felt for millennia." ] },
-      { t: "l", l: [ "It is therefore Inspiration",
+          "Felt for millennia."
+        ] },
+      { t: "l", l: [
+          "It is therefore Inspiration",
           "Which cuts the Phosphorus schism",
           "A trench which must be followed",
-          "Led onward by the gut.",
+          "Led onward by the gut."
+        ] },
+      { t: "l", l: [
           "The third shard of Phosphorus",
           "Its name is Contagion",
           "It is the hive",
-          "Which constitutes a piece of the divine.",
+          "Which constitutes a piece of the divine."
+        ] },
+      { t: "l", l: [
           "Through Contagion",
           "The other beckons",
-          "Into proximity with Rhagma.",
+          "Into proximity with Rhagma."
+        ] },
+      { t: "l", l: [
           "It is the groundswell of the other",
           "Which calls us to approach",
           "As it stirs us to push on",
-          "To march the valley of Phosphorus.",
+          "To march the valley of Phosphorus."
+        ] },
+      { t: "l", l: [
           "As sparks approach sparks",
           "They grow brighter",
           "Their excitement spreads",
-          "And hearts begin to race." ] },
-      { t: "ci", l: [ "Contagion is the strongest shard",
+          "And hearts begin to race."
+        ] },
+      { t: "l", l: [
+          "Contagion is the strongest shard",
           "It is the body",
-          "Through which all else proves its mettle.",
+          "Through which all else proves its mettle."
+        ] },
+      { t: "l", l: [
           "Contagion is the magic",
           "Which Kakos cannot quash",
           "As its sum amounts",
           "To something vaster",
-          "Than its dim lit parts.",
+          "Than its dim lit parts."
+        ] },
+      { t: "l", l: [
           "It is therefore Contagion",
           "Which is the fusion of Phosphorus",
           "Gradually becoming a star",
-          "Following the call of the other.",
+          "Following the call of the other."
+        ] },
+      { t: "ci", l: [
           "They said,",
           "“I have known many",
           "Who feel passion,",
@@ -1029,55 +1100,77 @@ const CHAPTERS = [
           "And have tasted contagion",
           "But know nothing of Sophia, Rhagma and the rest.",
           "Need they learn the lessons you have told?”",
-          "The voice replied," ] },
-      { t: "l", l: [ "The guidance of Phosphorus",
+          "The voice replied,"
+        ] },
+      { t: "l", l: [
+          "The guidance of Phosphorus",
           "Cares not for fame",
-          "Nor recognition.",
+          "Nor recognition."
+        ] },
+      { t: "l", l: [
           "It only hopes",
-          "To be approached.",
+          "To be approached."
+        ] },
+      { t: "l", l: [
           "The guidance of Phosphorus",
           "Is seen without their knowledge",
           "It is heard without their recognition",
           "Of the terminus that calls",
           "Its stewards only hope",
-          "For a brighter tomorrow.",
+          "For a brighter tomorrow."
+        ] },
+      { t: "l", l: [
           "Phosphorus has called",
           "Those who move history",
           "Towards Rhagma",
-          "Though they do not know her name.",
+          "Though they do not know her name."
+        ] },
+      { t: "l", l: [
           "And Kakos drives",
           "Those who move history",
           "Towards the Sheer",
-          "Though they know him by another name." ] },
-      { t: "ci", l: [ "It enters them",
+          "Though they know him by another name."
+        ] },
+      { t: "l", l: [
+          "It enters them",
           "And shows them",
           "What could be",
-          "Without their knowing.",
+          "Without their knowing."
+        ] },
+      { t: "l", l: [
           "Phosphorus’ name is not known",
           "But you have seen its lights",
           "In places of unity",
           "Places of common cause",
           "Places where love, equality, and the adoration of difference",
-          "Are held in high regard.",
+          "Are held in high regard."
+        ] },
+      { t: "l", l: [
           "Phosphorus therefore",
           "Is an inversion of faith",
           "It cares not if you believe",
           "Or even know its name",
           "But only that your acts",
-          "Bring about its greater proximity.",
+          "Bring about its greater proximity."
+        ] },
+      { t: "ci", l: [
           "They said",
           "“You speak of the light and faith",
           "You have shown me oblivion",
           "And offered salvation",
-          "Is this the voice" ] },
-      { t: "l", l: [ "Of the god of old books",
+          "Is this the voice",
+          "Of the god of old books",
           "Or the gods of old stories",
           "Or something altogether other?”",
-          "They voice said,",
+          "They voice said,"
+        ] },
+      { t: "l", l: [
           "The spark of which I speak",
           "Is spoken of in different terms",
           "By every god",
-          "Worthy of the name.",
+          "Worthy of the name."
+        ] },
+      { t: "l", l: [
           "The common line between",
           "Jesus",
           "Mohammed",
@@ -1086,12 +1179,14 @@ const CHAPTERS = [
           "Buddah",
           "And countless others",
           "Call towards the same light",
-          "Of Phosphorus.",
+          "Of Phosphorus."
+        ] },
+      { t: "ci", l: [
           "Then the voice showed many roads",
           "All leading towards one truth",
           "Towards Rhagma",
-          "That gateway to the garden" ] },
-      { t: "ci", l: [ "Where Duosophia waits",
+          "That gateway to the garden",
+          "Where Duosophia waits",
           "And each of the roads",
           "Was a shard of illumination",
           "Emanating from the fissure.",
@@ -1106,35 +1201,53 @@ const CHAPTERS = [
           "Impose laws",
           "And punish their own",
           "And others alike?”",
-          "And the voice said,",
+          "And the voice said,"
+        ] },
+      { t: "l", l: [
           "Kakos has entered their institutions",
           "And whispered lies in their ears",
           "To turn them from the spark",
           "And love",
           "And equality",
-          "And the adoration of difference." ] },
-      { t: "l", l: [ "Instead they turn",
+          "And the adoration of difference."
+        ] },
+      { t: "l", l: [
+          "Instead they turn",
           "To wealth",
           "And towers",
           "And glory",
-          "And domination.",
+          "And domination."
+        ] },
+      { t: "l", l: [
           "It is their authorities",
-          "In whom you should doubt.",
-          "And then the voice said,",
+          "In whom you should doubt."
+        ] },
+      { t: "ci", l: [
+          "And then the voice said,"
+        ] },
+      { t: "l", l: [
           "Stories are a clumsy blessing",
           "They direct us toward the eschatol",
-          "Whether Sheer or Rhagma.",
+          "Whether Sheer or Rhagma."
+        ] },
+      { t: "l", l: [
           "Only one whisper of Kakos",
           "A twisting of a word",
           "Can divert us from the gap",
-          "Towards abyssal horrors.",
+          "Towards abyssal horrors."
+        ] },
+      { t: "l", l: [
           "Choose to know this story",
           "If nothing else",
           "There is a Sheer",
-          "And we must divert from its path." ] },
-      { t: "c", l: [ "It is by accepting this conclusion",
+          "And we must divert from its path."
+        ] },
+      { t: "l", l: [
+          "It is by accepting this conclusion",
           "That we might learn to divert",
-          "From our death march towards it." ] }
+          "From our death march towards it."
+        ] },
+      { t: "img" }
     ]
   },
   {
