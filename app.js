@@ -1729,69 +1729,104 @@ const CHAPTERS = [
     n: 6,
     title: "Idiomata of Kakos",
     sections: [
-      { t: "ci", l: [ "And they said,",
-          "“Tell us of Duosophia’s embrace”",
-          "And the voice said,",
+      { t: "ci", l: [
+          "And they said,",
+          "“Tell us of Duosophia's embrace”",
+          "And the voice said,"
+        ] },
+      { t: "l", l: [
           "To learn of her",
           "Is merely a pleasant fantasy",
           "If you do not learn",
           "Of the one who stands",
-          "Between she and us.",
+          "Between she and us."
+        ] },
+      { t: "l", l: [
           "Therefore learn",
           "Of the one who rules the world",
           "And holds the joys of humanity hostage",
-          "For his repulsive imposition.",
+          "For his repulsive imposition."
+        ] },
+      { t: "l", l: [
           "And his names are many",
           "We know him as Kakos",
           "And he is the High One",
           "And he is Taxis",
           "And he is Urizen",
           "And he is Makros",
-          "And he is the Father of All" ] },
-      { t: "l", l: [ "And he is Kakotaxia",
-          "And he is Yaldabaoth.",
+          "And he is the Father of All"
+        ] },
+      { t: "l", l: [
+          "And he is Kakotaxia",
+          "And he is Yaldabaoth."
+        ] },
+      { t: "l", l: [
           "And he takes what form he must",
           "But behind his facade",
           "Stands a great tower",
           "And it is made of many pyramids",
-          "Stacked one upon the next.",
+          "Stacked one upon the next."
+        ] },
+      { t: "l", l: [
           "And the stack is upheld",
           "By an osseous scaffolding",
           "Constructed from the bones of every people",
           "And the dead are brought to the base of the tower",
-          "And their pieces are arranged into neat little rows.",
+          "And their pieces are arranged into neat little rows."
+        ] },
+      { t: "l", l: [
           "And they are assimilated into its structure",
           "And thereby the tower grows a little taller",
           "And the pyramids rise steadily from the earth",
-          "As the macabre frame progresses.",
+          "As the macabre frame progresses."
+        ] },
+      { t: "l", l: [
           "And at the head of the tower",
           "Are ancient bones",
           "Of those who fell first",
-          "Their arrangement resembles a thin smile" ] },
-      { t: "ci", l: [ "And they are dry and odourless.",
+          "Their arrangement resembles a thin smile"
+        ] },
+      { t: "l", l: [
+          "And they are dry and odourless."
+        ] },
+      { t: "l", l: [
           "And at the base",
           "The bodies of the recently fresh",
           "And there is a putrid stench",
           "And there are maggots in great multitudes",
-          "And the sound is deafening.",
+          "And the sound is deafening."
+        ] },
+      { t: "ci", l: [
           "And they said,",
           "“We cannot bear to learn of this abomination”",
-          "And the voice said,",
+          "And the voice said,"
+        ] },
+      { t: "l", l: [
           "Close your eyes",
           "And you will be blind",
-          "Until the swarm becomes deafening.",
+          "Until the swarm becomes deafening."
+        ] },
+      { t: "l", l: [
           "Block you ears",
           "And you will be deaf",
-          "Until the maggots are upon you.",
+          "Until the maggots are upon you."
+        ] },
+      { t: "ci", l: [
           "They shuddered",
           "And the voice lifted them up",
-          "And it said," ] },
-      { t: "l", l: [ "Then let me show you",
+          "And it said,"
+        ] },
+      { t: "l", l: [
+          "Then let me show you",
           "The mundane form",
           "Taken by Kakos",
-          "As he rules over the earth.",
+          "As he rules over the earth."
+        ] },
+      { t: "l", l: [
           "And it is called Kakarchia",
-          "And it is called Demonarchy.",
+          "And it is called Demonarchy."
+        ] },
+      { t: "ci", l: [
           "And they were lifted between the earth and the cloud",
           "And they looked down at the cities of the earth",
           "And they were shown all the parliament buildings",
@@ -1802,161 +1837,258 @@ const CHAPTERS = [
           "And the mansions",
           "And various institutions of government",
           "And other strange and beautiful architecture.",
-          "And they said,",
+          "And they said,"
+        ] },
+      { t: "l", l: [
           "These are the residences of the arms of Kakos",
-          "And they shall be known as demons.",
-          "Demons" ] },
-      { t: "l", l: [ "Not because of birth nor creed",
-          "But acts alone.",
+          "And they shall be known as demons."
+        ] },
+      { t: "l", l: [
+          "Demons"
+        ] },
+      { t: "l", l: [
+          "Not because of birth nor creed",
+          "But acts alone."
+        ] },
+      { t: "l", l: [
           "And the ones among them",
           "That work within the walls of power",
           "Who possess the sacred spark",
-          "Can be counted by hand.",
+          "Can be counted by hand."
+        ] },
+      { t: "ci", l: [
           "And they flew over Thessaloniki",
           "And there was a great palace there",
-          "And they voice said,",
+          "And they voice said,"
+        ] },
+      { t: "l", l: [
           "Kakos had a great victory here",
           "And on that day",
           "The words of a wise man",
           "Were trampled and remoulded",
           "Into a mighty catalyst",
-          "And doctrine of Kakarchia.",
+          "And doctrine of Kakarchia."
+        ] },
+      { t: "l", l: [
           "What an awesome thing",
           "To see a creed so contagious",
-          "To meet a machine of great absorption.",
-          "But do not be mistaken" ] },
-      { t: "ci", l: [ "That just as Rome was not built in a day",
+          "To meet a machine of great absorption."
+        ] },
+      { t: "l", l: [
+          "But do not be mistaken"
+        ] },
+      { t: "l", l: [
+          "That just as Rome was not built in a day",
           "Neither was the greater empire",
           "That precedes and follows it",
           "Through the history of civilisation",
-          "Since the first crown was set.",
+          "Since the first crown was set."
+        ] },
+      { t: "ci", l: [
           "And they said,",
           "“If Kakos rules the world",
           "And Demonarchy fills the world",
           "Can it truly be said",
           "That he can be defeated?”",
-          "The voice said,",
-          "Kakos’ power is phenomenal",
+          "The voice said,"
+        ] },
+      { t: "l", l: [
+          "Kakos' power is phenomenal",
           "Yet he is hollow",
           "And lacking",
           "And resentful",
           "Because he knows that we possess",
-          "What he cannot.",
+          "What he cannot."
+        ] },
+      { t: "l", l: [
           "So he builds us a cage",
           "To contain our favour",
-          "And conceal our ascendancy." ] },
-      { t: "l", l: [ "And he constructs for us",
+          "And conceal our ascendancy."
+        ] },
+      { t: "l", l: [
+          "And he constructs for us",
           "A thin veil of sensation",
           "To lull us into",
-          "Forgetfulness.",
+          "Forgetfulness."
+        ] },
+      { t: "l", l: [
           "Kakos is a desperate king",
           "Determined to push further",
           "Progress our descent",
-          "Into misery and lack.",
+          "Into misery and lack."
+        ] },
+      { t: "l", l: [
           "His bounty must grow",
           "And we must not approach it",
-          "Lest he bears his cavernous teeth.",
+          "Lest he bears his cavernous teeth."
+        ] },
+      { t: "l", l: [
           "Until the only choice",
           "That remains",
-          "Is between Sheer and Rhagma.",
+          "Is between Sheer and Rhagma."
+        ] },
+      { t: "l", l: [
           "But if he fears",
           "That more than two steps might be taken",
           "Towards his illgotten abundance",
           "He will shrink",
           "And quake in fear",
-          "And speak of concessions" ] },
-      { t: "l", l: [ "And the provision of tempting morsels.",
+          "And speak of concessions"
+        ] },
+      { t: "l", l: [
+          "And the provision of tempting morsels."
+        ] },
+      { t: "l", l: [
           "But do not mistake",
           "His trembling for authenticity",
           "For his eyes will not divert",
           "From his precious abundance",
           "And his offers will not exceed",
           "The tiniest crumb",
-          "That will be found tolerable.",
+          "That will be found tolerable."
+        ] },
+      { t: "l", l: [
           "Never trust his words",
           "For he cares for nothing but his mountain",
           "For if he cared for even himself",
           "He would not run headlong",
-          "Towards the Sheer.",
+          "Towards the Sheer."
+        ] },
+      { t: "l", l: [
           "Therefore kill Kakos",
-          "And deconstruct his Demonarchy.",
+          "And deconstruct his Demonarchy."
+        ] },
+      { t: "l", l: [
           "Show it all the mercy",
           "That has been shown to a billion sparks",
           "Who wanted nothing",
-          "But to eat and dance." ] },
-      { t: "l", l: [ "But do it not out of anger",
+          "But to eat and dance."
+        ] },
+      { t: "l", l: [
+          "But do it not out of anger",
           "Nor revenge",
           "But for the promise of something better",
           "For the endless garden",
-          "And the embrace of Duosophia.",
+          "And the embrace of Duosophia."
+        ] },
+      { t: "ci", l: [
           "And the voice paused",
-          "Before proceeding,",
+          "Before proceeding,"
+        ] },
+      { t: "l", l: [
           "Kakos is favoured by this world",
           "Success is his privilege",
           "And the throne is rightfully his",
-          "Since it was he who constructed it.",
+          "Since it was he who constructed it."
+        ] },
+      { t: "l", l: [
           "Kakos constitutes the body of society",
           "Its structures and hierarchy",
           "But the body is not his rightfully",
-          "Since that husk contains a shining seed.",
+          "Since that husk contains a shining seed."
+        ] },
+      { t: "l", l: [
           "Kakos infects the seed",
-          "With promises of unnatural growth.",
+          "With promises of unnatural growth."
+        ] },
+      { t: "l", l: [
           "And those husks in whom no seed grows",
-          "They are his vessels." ] },
-      { t: "ci", l: [ "Look upon your leaders and judge",
+          "They are his vessels."
+        ] },
+      { t: "l", l: [
+          "Look upon your leaders and judge",
           "Is their seed infected",
-          "With promises of finding favor?",
+          "With promises of finding favor?"
+        ] },
+      { t: "l", l: [
           "Or are they soulless husks",
           "In whom no seed sits",
           "But instead",
-          "A corrosive catalyst?",
-          "And what weight does the answer hold?",
-          "“Little, until the day of justice”",
+          "A corrosive catalyst?"
+        ] },
+      { t: "l", l: [
+          "And what weight does the answer hold?"
+        ] },
+      { t: "ci", l: [
+          "“Little, until the day of justice”"
+        ] },
+      { t: "l", l: [
           "What matters is his demand",
           "To dampen more sparks",
           "To recruit more drivers",
-          "To hasten our draw towards the eschaton.",
+          "To hasten our draw towards the eschaton."
+        ] },
+      { t: "l", l: [
           "Their minuscule prizes",
           "For foregoing humanity",
           "Hold great power",
-          "For reason of their superficiality." ] },
-      { t: "l", l: [ "But delay judgement",
+          "For reason of their superficiality."
+        ] },
+      { t: "l", l: [
+          "But delay judgement",
           "On these foolish pawns",
-          "For Kakos is a creature of mass.",
+          "For Kakos is a creature of mass."
+        ] },
+      { t: "l", l: [
           "Not the mass of the loyal",
           "For they are nothing to him",
-          "But atoms of currency.",
+          "But atoms of currency."
+        ] },
+      { t: "l", l: [
           "Rather, mass is held by the few with the power to act",
           "It is they who pull its bony strings",
-          "And animate those dreadful towers.",
+          "And animate those dreadful towers."
+        ] },
+      { t: "l", l: [
           "Look to them, therefore",
           "For when those strings are severed",
-          "The tower’s foundations will shake",
+          "The tower's foundations will shake",
           "And opportunity will arise",
-          "For intention to do the impossible.",
-          "And the voice asked,",
-          "Do you know the true essence of his power?",
-          "And they listened," ] },
-      { t: "ci", l: [ "Kakos’ power",
+          "For intention to do the impossible."
+        ] },
+      { t: "ci", l: [
+          "And the voice asked,"
+        ] },
+      { t: "l", l: [
+          "Do you know the true essence of his power?"
+        ] },
+      { t: "ci", l: [
+          "And they listened,"
+        ] },
+      { t: "l", l: [
+          "Kakos' power",
           "Does not lie in his force",
           "Since brutal as it is",
-          "It makes measly comparison to the people acting as one.",
-          "And it certainly doesn’t lie in his ideas",
+          "It makes measly comparison to the people acting as one."
+        ] },
+      { t: "l", l: [
+          "And it certainly doesn't lie in his ideas",
           "For they are dull",
           "And their quality lies only",
-          "In their capacity to confuse and distract.",
+          "In their capacity to confuse and distract."
+        ] },
+      { t: "l", l: [
           "No",
           "The power of Kakos is found",
-          "In his doctrine of inevitability.",
+          "In his doctrine of inevitability."
+        ] },
+      { t: "l", l: [
           "Force and thoughts are secondary",
           "If we have no will to resist",
-          "And good ideas are castrated by impossibility.",
+          "And good ideas are castrated by impossibility."
+        ] },
+      { t: "ci", l: [
           "“And how does one face the inevitable?”",
           "They asked",
-          "And the reply said,",
-          "Face it with intention." ] },
-      { t: "c", l: [ "For there is nothing more certain",
-          "Than certitude." ] }
+          "And the reply said,"
+        ] },
+      { t: "l", l: [
+          "Face it with intention."
+        ] },
+      { t: "l", l: [
+          "For there is nothing more certain",
+          "Than certitude."
+        ] }
     ]
   },
   {
