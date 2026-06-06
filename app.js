@@ -1254,214 +1254,335 @@ const CHAPTERS = [
     n: 4,
     title: "Steps to Rhagma",
     sections: [
-      { t: "ci", l: [ "They said,",
+      { t: "ci", l: [
+          "They said,",
           "“You have shown us Phosphorus",
           "And told us to head towards its shine.",
           "What steps will take us there?",
           "And what will the journey look like?”",
-          "The voice replied,",
+          "The voice replied,"
+        ] },
+      { t: "l", l: [
           "Need I tell you",
           "That the journey will be one of anguish",
           "For Kakos will not rest",
-          "While his empire is unmade.",
+          "While his empire is unmade."
+        ] },
+      { t: "l", l: [
           "Suffering is everywhere",
           "During this slow march towards the Sheer",
           "But I promise you this",
           "It will advance",
-          "By one means or another.",
+          "By one means or another."
+        ] },
+      { t: "l", l: [
           "The choice is this",
           "Experience the horrors of the Sheer",
           "The death of all that is beautiful",
-          "Or feel Kakos’ rage" ] },
-      { t: "ci", l: [ "As you face the ruler of the world.",
+          "Or feel Kakos’ rage"
+        ] },
+      { t: "l", l: [
+          "As you face the ruler of the world."
+        ] },
+      { t: "l", l: [
           "But surrender not",
           "For there is a path",
-          "And it is illuminated.",
+          "And it is illuminated."
+        ] },
+      { t: "l", l: [
           "And there are 12 steps",
           "And the first are the most painful",
-          "And most prolonged.",
+          "And most prolonged."
+        ] },
+      { t: "l", l: [
           "But persist",
           "And the Contagion will condense",
           "And Dromos will be built",
           "And momentum will be gained",
-          "And Phosphorus will be your guide.",
+          "And Phosphorus will be your guide."
+        ] },
+      { t: "ci", l: [
           "And they said,",
           "“Tell us of each step in turn",
           "So we might follow Phosphorus",
           "And hassen the construction of Dromos”",
-          "The voice said,",
+          "The voice said,"
+        ] },
+      { t: "l", l: [
           "The first pace",
-          "And the second" ] },
-      { t: "l", l: [ "Are all too familiar",
-          "To those who hear the spark.",
+          "And the second"
+        ] },
+      { t: "l", l: [
+          "Are all too familiar",
+          "To those who hear the spark."
+        ] },
+      { t: "l", l: [
           "First, there will be turmoil",
           "And hopelessness will befall them",
           "And Kakodynamia will appear insurmountable",
-          "And a second step will appear impossible.",
+          "And a second step will appear impossible."
+        ] },
+      { t: "l", l: [
           "And there will be four paths",
           "To hide away",
           "To submit and withdraw",
           "To feed Kakos the spark",
-          "Or to resist.",
+          "Or to resist."
+        ] },
+      { t: "l", l: [
           "And those who resist",
-          "Will see the second day.",
+          "Will see the second day."
+        ] },
+      { t: "l", l: [
           "Second, there will be suffering",
           "And great desperation",
           "Great risks taken",
-          "And terrible prices paid.",
+          "And terrible prices paid."
+        ] },
+      { t: "l", l: [
           "The stones of Dromos will be laid",
-          "And destroyed on the same day" ] },
-      { t: "l", l: [ "And both sides",
-          "Will suffer great losses.",
+          "And destroyed on the same day"
+        ] },
+      { t: "l", l: [
+          "And both sides",
+          "Will suffer great losses."
+        ] },
+      { t: "l", l: [
           "And these will be the longest days",
           "And they will seem to last forever",
           "But they will end",
-          "By either Sheer or Rhagma.",
+          "By either Sheer or Rhagma."
+        ] },
+      { t: "l", l: [
           "And the night will be darkest then",
           "And it will be easier to turn back",
-          "And return to turmoil.",
+          "And return to turmoil."
+        ] },
+      { t: "l", l: [
           "And those who do not turn back",
-          "Will see the third day.",
+          "Will see the third day."
+        ] },
+      { t: "l", l: [
           "Third, there will be crescendo",
           "And that will be a glorious day",
           "And resistance will surmise",
-          "And there will be great intensity.",
+          "And there will be great intensity."
+        ] },
+      { t: "l", l: [
           "And that will be the hardest climb",
           "To reach that day",
           "And begin to topple",
-          "Those countless towers." ] },
-      { t: "l", l: [ "Amnesia will fill the air on that day",
+          "Those countless towers."
+        ] },
+      { t: "l", l: [
+          "Amnesia will fill the air on that day",
           "And it will be easy to forget",
           "The path of Phosphorus",
           "And the love, equality and adoration of difference",
-          "Which are its lights.",
+          "Which are its lights."
+        ] },
+      { t: "l", l: [
           "And those who remember",
-          "Will see the fourth day.",
+          "Will see the fourth day."
+        ] },
+      { t: "l", l: [
           "Fourth, will be the day of chaos",
           "After the tides have turned",
           "And there is no coxswain",
-          "And Kakos vies for life.",
+          "And Kakos vies for life."
+        ] },
+      { t: "l", l: [
           "And there will be those who forget",
           "And hear the call of Kakos",
           "And he might rise again",
-          "And force retreat.",
+          "And force retreat."
+        ] },
+      { t: "l", l: [
           "There will be a great struggle",
           "To produce something beautiful",
           "And give reason to feel hope",
-          "And celebrate the progress made." ] },
-      { t: "l", l: [ "And those who find cause to celebrate",
-          "Will see the fifth day.",
+          "And celebrate the progress made."
+        ] },
+      { t: "l", l: [
+          "And those who find cause to celebrate",
+          "Will see the fifth day."
+        ] },
+      { t: "l", l: [
           "Fifth, will be a day of justice",
           "Where the power of Kakos is revoked",
           "And his demons are brought unto trial",
-          "And it will be righteous.",
+          "And it will be righteous."
+        ] },
+      { t: "l", l: [
           "And there will be distinction",
           "Between those demons",
           "Who await the standard",
-          "And those for whom no offer is given.",
+          "And those for whom no offer is given."
+        ] },
+      { t: "l", l: [
           "Those who bear",
           "That parasitic spirit",
           "Have drowned their spark",
           "And the sparks of the innocent",
-          "Beyond amelioration.",
+          "Beyond amelioration."
+        ] },
+      { t: "l", l: [
           "For some crimes are too great",
-          "To seek forgiveness.",
-          "There are others" ] },
-      { t: "l", l: [ "Who have fratenised with Kakos",
+          "To seek forgiveness."
+        ] },
+      { t: "l", l: [
+          "There are others"
+        ] },
+      { t: "l", l: [
+          "Who have fratenised with Kakos",
           "But whose spark of humanity",
-          "May yet survive.",
+          "May yet survive."
+        ] },
+      { t: "l", l: [
           "And when they make themselves known",
-          "They will be invited to Rhagma.",
+          "They will be invited to Rhagma."
+        ] },
+      { t: "l", l: [
           "And those who hold the spark",
-          "Will see the sixth day.",
+          "Will see the sixth day."
+        ] },
+      { t: "l", l: [
           "Sixth, will be a day of distribution",
           "Where the land of Kakos is taken",
           "And their bounties become bricks",
-          "To build Dromos.",
+          "To build Dromos."
+        ] },
+      { t: "l", l: [
           "And needs will be met",
           "And food will be shared",
           "And shelter will be provided",
-          "And all will have what they require.",
+          "And all will have what they require."
+        ] },
+      { t: "l", l: [
           "And there will be rejoicing",
           "And Kakos’ coffers will be liberated",
           "And they will take what they need",
-          "And the rest will be distributed." ] },
-      { t: "l", l: [ "And those whose needs are met",
-          "Will see the seventh day.",
+          "And the rest will be distributed."
+        ] },
+      { t: "l", l: [
+          "And those whose needs are met",
+          "Will see the seventh day."
+        ] },
+      { t: "l", l: [
           "Seventh, will be a day of dismantling",
           "The macabre engine",
           "Will be deconstructed",
-          "And its parts judged.",
+          "And its parts judged."
+        ] },
+      { t: "l", l: [
           "Its pieces divided",
           "Between those worthy of redistribution",
           "Of repurposing",
           "Into the bricks of Dromos.",
           "And those which are worth nothing",
           "But bloodsoaked paper",
-          "Which holds value no more.",
+          "Which holds value no more."
+        ] },
+      { t: "l", l: [
           "Remember this",
           "Kakos acts through men",
           "And those who hold its parts",
-          "Will grasp them tightly.",
+          "Will grasp them tightly."
+        ] },
+      { t: "l", l: [
           "And when the mechanism has been dismantled",
-          "They will see the eighth day." ] },
-      { t: "l", l: [ "Eighth, will be the day of standards",
+          "They will see the eighth day."
+        ] },
+      { t: "l", l: [
+          "Eighth, will be the day of standards",
           "Where the hole from which Kakos emerged is filled",
           "And rules are set",
-          "To veto his return.",
+          "To veto his return."
+        ] },
+      { t: "l", l: [
           "And as the bricks of Dromos rise",
           "Agreements will be made",
           "And consensus found",
-          "On what might cause those bricks to fall.",
+          "On what might cause those bricks to fall."
+        ] },
+      { t: "l", l: [
           "And the bar will be high",
           "To assure that only Kakos",
           "Is touched by its judgement",
           "And only those who violate Gaia",
           "And take us towards the Sheer",
-          "Will be rejected from the garden.",
+          "Will be rejected from the garden."
+        ] },
+      { t: "l", l: [
           "And those who shape the standard",
-          "Will see the ninth day.",
+          "Will see the ninth day."
+        ] },
+      { t: "l", l: [
           "Ninth, will be the clearing",
           "Where the reminiscence of Kakarchia is cleared",
-          "In accordance with the standard." ] },
-      { t: "l", l: [ "And all of the world will then belong to all",
+          "In accordance with the standard."
+        ] },
+      { t: "l", l: [
+          "And all of the world will then belong to all",
           "And none will have a greater part",
-          "Than any other.",
+          "Than any other."
+        ] },
+      { t: "l", l: [
           "And on that day",
           "Kakos will no longer reside on earth",
           "And all will see their harvests grow",
           "And they will celebrate",
           "And the light will grow brighter",
           "And Dromos will be wide",
-          "And will emanate pure light.",
+          "And will emanate pure light."
+        ] },
+      { t: "l", l: [
           "And those who build Dromos",
-          "Will see the tenth day.",
+          "Will see the tenth day."
+        ] },
+      { t: "l", l: [
           "Tenth, the standard will withdraw",
           "And hide its face",
           "For in the absence of Kakos",
-          "There will be no need for imposition.",
+          "There will be no need for imposition."
+        ] },
+      { t: "l", l: [
           "As a wise woman cautioned",
           "Against laying down rule or law",
-          "The standard need not reappear" ] },
-      { t: "l", l: [ "Unless something abominable takes place.",
+          "The standard need not reappear"
+        ] },
+      { t: "l", l: [
+          "Unless something abominable takes place."
+        ] },
+      { t: "l", l: [
           "And the court will sleep",
-          "While the people rejoice.",
+          "While the people rejoice."
+        ] },
+      { t: "l", l: [
           "And those who rejoice",
-          "Will see the eleventh day.",
+          "Will see the eleventh day."
+        ] },
+      { t: "l", l: [
           "Eleventh, there will be a glorious day",
           "A second distribution",
           "Where all the resources of the world",
           "And all the parts of Gaia",
           "Will belong to all",
           "And belong to none",
-          "In equal parts.",
+          "In equal parts."
+        ] },
+      { t: "l", l: [
           "And from that day",
           "Jubilation will not cease",
           "And Dromos will be magnificent",
-          "And it will begin to resemble Rhagma.",
+          "And it will begin to resemble Rhagma."
+        ] },
+      { t: "l", l: [
           "And those who are equal, who feel love and adore difference",
-          "Will see the final day." ] },
-      { t: "l", l: [ "And on the twelfth day",
+          "Will see the final day."
+        ] },
+      { t: "l", l: [
+          "And on the twelfth day",
           "The longest day",
           "The reconstruction will begin",
           "And the mountain will be tall",
@@ -1472,13 +1593,17 @@ const CHAPTERS = [
           "And growth will be plentiful",
           "And Dromos will meet Rhagma",
           "And they will begin to become one",
-          "And the light will embrace all.",
+          "And the light will embrace all."
+        ] },
+      { t: "l", l: [
           "And at the end of that day",
           "The final day",
           "Will be a day of arrival",
           "And all will be embraced",
           "Forevermore",
-          "By Duosophia." ] }
+          "By Duosophia."
+        ] },
+      { t: "img" }
     ]
   },
   {
