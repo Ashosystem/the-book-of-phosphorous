@@ -2095,7 +2095,8 @@ const CHAPTERS = [
     n: 7,
     title: "Anaspinther",
     sections: [
-      { t: "ci", l: [ "They said,",
+      { t: "ci", l: [
+          "They said,",
           "“You spoke of husks and dampened sparks",
           "And the day of justice and of clearing",
           "And you told us of Rhagma",
@@ -2106,7 +2107,9 @@ const CHAPTERS = [
           "Does the one you represent care not for them?",
           "Does her plan not reach those martyrs",
           "Who fall along the way?”",
-          "And the voice replied,",
+          "And the voice replied,"
+        ] },
+      { t: "l", l: [
           "When good ones fall",
           "Their spark departs",
           "And like a string",
@@ -2115,63 +2118,84 @@ const CHAPTERS = [
           "And then",
           "Looping its knot",
           "It returns to the body",
-          "A new body" ] },
-      { t: "l", l: [ "Its caged domain of Kakos.",
+          "A new body"
+        ] },
+      { t: "l", l: [
+          "Its caged domain of Kakos."
+        ] },
+      { t: "l", l: [
           "Each shining stone of light",
           "If their spark is bright enough to leave a trace",
           "Is varied in size and weight",
-          "In proportion to their gift.",
+          "In proportion to their gift."
+        ] },
+      { t: "l", l: [
           "And upon its return",
           "To a new frame",
           "The spark of those who thread the loop",
           "Grows a little brighter",
-          "And the hope of Rhagma grows brighter too.",
+          "And the hope of Rhagma grows brighter too."
+        ] },
+      { t: "l", l: [
           "But there are also those",
           "Who do not pass through the Phosphorus path",
           "For they have taken more than they gave",
           "And have committed the deeds of Kakos",
           "And among those sorry souls",
           "They will not taste Rhagma",
-          "And their sparks will be dampened therefore.",
+          "And their sparks will be dampened therefore."
+        ] },
+      { t: "l", l: [
           "And there are those others",
           "Those rare demons",
-          "Whose spark is not a spark" ] },
-      { t: "l", l: [ "But merely a husk",
+          "Whose spark is not a spark",
+          "But merely a husk",
           "And corrosive catalyst",
           "A sickening void",
           "And they will live to enact the deeds of Kakos",
           "And they will never glimpse the Amygphos",
           "But instead build the face of the Sheer",
           "And they will swear allegiance to it",
-          "For to them it will be a God.",
+          "For to them it will be a God."
+        ] },
+      { t: "l", l: [
           "And the cycle will continue",
           "Until we reach our final terminus",
           "And the sparks of friends of Kakos will fade",
           "And the sparks of friends of Duosophia will grow",
           "And the sparks of the ones who are remembered",
-          "Will shine brighter still.",
+          "Will shine brighter still."
+        ] },
+      { t: "l", l: [
           "And at the time of terminus",
           "When we meet wall or fissure",
-          "The fate of souls will be decided.",
+          "The fate of souls will be decided."
+        ] },
+      { t: "l", l: [
           "And if we find Rhagma",
           "Each spark will return to its source",
           "And we will taste paradise",
-          "And we will be as one" ] },
-      { t: "l", l: [ "And the body of Kakos will be judged",
+          "And we will be as one",
+          "And the body of Kakos will be judged",
           "And the Sheer will be deconstructed",
-          "And that vile catalyst destroyed.",
+          "And that vile catalyst destroyed."
+        ] },
+      { t: "l", l: [
           "And if we meet the Sheer",
           "No such fanfare will be heard",
           "Only sad annihilation",
           "And all the steps we had taken",
-          "Will be for nought.",
+          "Will be for nought."
+        ] },
+      { t: "l", l: [
           "Make haste",
           "Therefore",
           "Towards the crack of light",
           "And do not falter",
           "So that all our toil will bear fruit",
           "And their toil too",
-          "Will be repaid." ] }
+          "Will be repaid."
+        ] }
     ]
   },
   {
