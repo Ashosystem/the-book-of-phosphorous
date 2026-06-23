@@ -3567,7 +3567,7 @@ function paint() {
 }
 
 function readHash() {
-  const m = window.location.hash.match(/chapter-(\d)/);
+  const m = window.location.hash.match(/chapter-(\d+)/);
   return m ? Number(m[1]) : 1;
 }
 
