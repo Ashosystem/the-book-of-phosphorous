@@ -1,13 +1,33 @@
 'use strict';
 
-// Verse numbers are NOT present in the source PDF. Set to true to show them.
+// Verse numbers are NOT in the source PDF. Set to true to show them.
 const SHOW_VERSE_NUMBERS = false;
 
-// Styles needed by the PDF-faithful rendering (right-aligned stanzas, full
-// illustration plates, footnotes). Appended so style.css need not be edited.
+// Convert a "^N" marker in (already-escaped) text into a superscript ref.
+function fnSup(str) {
+  return str.replace(/\^(\d+)/g, '<sup class="fn-ref">$1</sup>');
+}
+
+// If an illustration plate file is missing, fall back to the symbol SVG.
+function plateFallback(img) {
+  const wrap = document.createElement('div');
+  wrap.innerHTML = duosophis();
+  if (wrap.firstElementChild) img.replaceWith(wrap.firstElementChild);
+  else img.remove();
+}
+
+// Styles for the PDF-faithful rendering, appended last so they win over
+// style.css without editing it. The key fix: the left-aligned stanzas were
+// collapsing to one word per line because the old verse-number row layout
+// shrank the text column. Forcing them to normal block flow restores them.
 (function injectStyles() {
   const css = `
-  .stanza.right { text-align: right; }
+  .stanza.left, .stanza.right { display: block !important; }
+  .stanza.left  { text-align: left  !important; }
+  .stanza.right { text-align: right !important; }
+  .stanza.left .stanza-lines, .stanza.right .stanza-lines {
+    width: auto !important; max-width: none !important; min-width: 0 !important;
+  }
   .chapter-image { text-align: center; }
   .chapter-plate { display: block; max-width: 70%; height: auto; margin: 2.6rem auto; }
   sup.fn-ref { font-size: .62em; vertical-align: super; line-height: 0; margin-left: 1px; }
@@ -3751,7 +3771,7 @@ function renderChapter(ch) {
   const html = ch.sections.map(s => {
     if (s.t === 'img') {
       return s.src
-        ? `<div class="chapter-image"><img class="chapter-plate" src="${s.src}" alt="" loading="lazy"></div>`
+        ? `<div class="chapter-image"><img class="chapter-plate" src="${s.src}" alt="" loading="lazy" onerror="plateFallback(this)"></div>`
         : `<div class="chapter-image">${duosophis()}</div>`;
     }
     const cls = s.t === 'ci' ? 'stanza centered italic'
@@ -3773,11 +3793,6 @@ function renderChapter(ch) {
     : '';
 
   return html + footnotes;
-}
-
-// Turn a "^N" marker (escaped text) into a superscript footnote reference.
-function fnSup(str) {
-  return str.replace(/\^(\d+)/g, '<sup class="fn-ref">$1</sup>');
 }
 
 function escHtml(str) {
@@ -3832,7 +3847,7 @@ function paint() {
 }
 
 function readHash() {
-  const m = window.location.hash.match(/chapter-(\d)/);
+  const m = window.location.hash.match(/chapter-(\d+)/);
   return m ? Number(m[1]) : 1;
 }
 
