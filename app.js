@@ -29,7 +29,8 @@ function plateFallback(img) {
     width: auto !important; max-width: none !important; min-width: 0 !important;
   }
   .chapter-image { text-align: center; }
-  .chapter-plate { display: block; max-width: 70%; height: auto; margin: 2.6rem auto; }
+  .chapter-plate { display: block; max-width: 70%; height: auto; margin: 2.6rem auto;
+    background: #fff; padding: 1.25rem; border-radius: 2px; box-sizing: border-box; }
   sup.fn-ref { font-size: .62em; vertical-align: super; line-height: 0; margin-left: 1px; }
   .chapter-footnotes { margin-top: 3.5rem; font-size: .86rem; opacity: .82; }
   .chapter-footnotes hr { border: none; border-top: 1px solid currentColor; opacity: .25; width: 38%; margin: 0 0 1rem; }
@@ -47,7 +48,7 @@ function plateFallback(img) {
 const CHAPTERS = [
   {
     n: 1,
-    title: "The Breath, the Word, & the Whisper",
+    title: "The Breath, the Word & the Whisper",
     sections: [
       { t: "ci", l: [
         "They sat on the heath",
@@ -99,7 +100,9 @@ const CHAPTERS = [
       { t: "l", l: [
         "And the world was beautiful",
         "And overflown with ecologies",
-        "And that was not his doing.",
+        "And that was not his doing."
+      ]},
+      { t: "l", l: [
         "And it was soon full of towers",
         "And thrones",
         "And edicts",
@@ -121,7 +124,7 @@ const CHAPTERS = [
       { t: "l", l: [
         "When Sophia saw her malformed offspring",
         "That it was vicious",
-        "That it was glutinous",
+        "That it was gluttonous",
         "That it was unrepentant",
         "That it was irreconcilable",
         "She felt great shame."
@@ -173,7 +176,7 @@ const CHAPTERS = [
       ]},
       { t: "l", l: [
         "So Sophia opened her lips",
-        "To breath her breath",
+        "To breathe her breath",
         "To speak her word",
         "And to whisper her secret."
       ]},
@@ -181,14 +184,17 @@ const CHAPTERS = [
         "Through Sophia’s breath",
         "A spark of divinity was blown into humanity",
         "And it shone brightly in many",
-        "And died out in Kakos’ most loyal.",
+        "And died out only in Kakos’ most loyal."
+      ]},
+      { t: "l", l: [
         "An intrinsic hope",
         "To bring the sacred into our hearts",
-        "So that it might be shared with the world."
+        "So that it might be present in every person",
+        "And shared among the hopeful."
       ]},
       { t: "l", l: [
         "Through Sophia’s word",
-        "The world was beautiful",
+        "The world was made beautiful",
         "Despite its malign maker",
         "It was everywhere elegant."
       ]},
@@ -225,7 +231,7 @@ const CHAPTERS = [
         "To know divinity in the world."
       ]},
       { t: "l", l: [
-        "Through Sophia’s whisper",
+        "And through Sophia’s whisper",
         "A secret was given",
         "Which would anger Kakos greatly",
         "If he knew of its omen."
@@ -244,7 +250,7 @@ const CHAPTERS = [
         "If only we might clear the way",
         "And kill that thing",
         "Which kept the key",
-        "The door between hell and paradise."
+        "To the door between hell and paradise."
       ]},
       { t: "l", l: [
         "And once unlocked",
@@ -255,17 +261,11 @@ const CHAPTERS = [
         "Difference without struggle."
       ]},
       { t: "l", l: [
-        "A teleological hope,",
+        "A teleological hope",
         "To invite everlasting divinity into the world",
+        "To prepare the good god to come",
         "And her name would be",
-        "Duosophia."
-      ]},
-      { t: "l", l: [
-        "The Pleroma conspired",
-        "To prepare the good god to be",
-        "And that was her name."
-      ]},
-      { t: "l", l: [
+        "Duosophia.",
         "And she would be perfect",
         "And bring perfection unto them",
         "And bring perfection unto that world",
@@ -293,21 +293,21 @@ const CHAPTERS = [
       ]},
       { t: "l", l: [
         "Little by little is the only way",
-        "The plermoa surmised",
+        "The Pleroma surmised",
         "Plant subtle seeds",
         "True enough to grow rebellion",
         "Slow enough not to rouse a tantrum too unbearable",
         "From that demonic child",
         "Little kernels of truth throughout the world",
-        "To insight those sparks",
+        "To incite those sparks",
         "To combine",
         "To ignite",
         "And to burn his verticality to dust."
       ]},
       { t: "l", l: [
         "And from that dust",
-        "Little seeds will grow",
-        "A beautiful garden raises",
+        "Little seeds would grow",
+        "A beautiful garden to rise",
         "As Duosophia descends",
         "To fix in place magnificence",
         "And let shards unshatter."
@@ -327,7 +327,7 @@ const CHAPTERS = [
       ]},
       { t: "ci", l: [
         "And when the voice had finished speaking",
-        "It portrayed to them an image."
+        "It presented to them an image."
       ]},
       { t: "img", src: "images/plate-01.png" },
     ],
@@ -394,7 +394,7 @@ const CHAPTERS = [
         "Who is it who rules the world?",
         "And how did they ascend to greatness?",
         "What acts did they perform to rise?",
-        "And what kind of world made those men thrive?",
+        "What kind of world made those men thrive?",
         "And what kind of world did they leave?"
       ]},
       { t: "l", l: [
@@ -470,8 +470,8 @@ const CHAPTERS = [
         "And from its progenitors",
         "All its lineage is infected",
         "In totality",
-        "And the edifice must thereby be felled",
-        "If sweet fruit are desired."
+        "And the edifice must therefore be felled",
+        "If sweet fruit is desired."
       ]},
       { t: "l", l: [
         "The sickness of which you speak",
@@ -650,8 +650,8 @@ const CHAPTERS = [
         "Now it appeared to them as a great wall",
         "And it proceeded into the heavens",
         "And down towards the depths",
-        "And to the west",
-        "And to the east",
+        "And to the West",
+        "And to the East",
         "And it was boundless."
       ]},
       { t: "ci", l: [
@@ -707,7 +707,7 @@ const CHAPTERS = [
       { t: "l", l: [
         "It is those demons",
         "By their words and by their actions",
-        "That bring the Sheer to humanity’s door."
+        "That brings the Sheer to humanity’s door."
       ]},
       { t: "l", l: [
         "Kakos tempts",
@@ -802,7 +802,7 @@ const CHAPTERS = [
         "It is magnificent."
       ]},
       { t: "l", l: [
-        "Praise the pleroma",
+        "Praise the Pleroma",
         "For forcing the Rhagma into being",
         "Through Sophia’s lips",
         "Her breath",
@@ -816,7 +816,7 @@ const CHAPTERS = [
         "And the voice answered,"
       ]},
       { t: "l", l: [
-        "Praise the pleroma",
+        "Praise the Pleroma",
         "Not through quiet reverence",
         "Nor through ecstatic dance",
         "But through making acts",
@@ -841,7 +841,7 @@ const CHAPTERS = [
         "Until Dromos is constructed."
       ]},
       { t: "l", l: [
-        "Praise the pleroma",
+        "Praise the Pleroma",
         "By amplifying Sophia’s whisper",
         "Until it is deafening",
         "Until the tower shakes",
@@ -880,7 +880,7 @@ const CHAPTERS = [
         "Towards sad history’s end."
       ]},
       { t: "l", l: [
-        "Learn the way to Rhagma.",
+        "Learn the way to Rhagma",
         "Study its shape",
         "Its character",
         "The way it sounds."
@@ -955,7 +955,7 @@ const CHAPTERS = [
         "It is called Proklesis",
         "It is called Amygphos",
         "It is called Orthoscrysos",
-        "It is called the shining thread."
+        "It is called the Shining Thread."
       ]},
       { t: "l", l: [
         "It is the unbowed line",
@@ -967,8 +967,8 @@ const CHAPTERS = [
       ]},
       { t: "ci", l: [
         "And they said,",
-        "“How can we hear the call of phosphorus",
-        "In this meagre dessert",
+        "“How can we hear the call of Phosphorus",
+        "In this meagre desert",
         "Which sits sadly in the oppressive shadow",
         "Of the Sheer.”",
         "And the voice said,"
@@ -990,13 +990,13 @@ const CHAPTERS = [
         "Find intersection with her light",
         "Until convergence is accomplished",
         "And that spark becomes a flame",
-        "And that whisper becomes an exclamation."
+        "And that whisper becomes a glad cry."
       ]},
       { t: "l", l: [
         "This is your duty",
         "To orient yourself",
         "And your fellows",
-        "With that shining thread."
+        "With that Shining Thread."
       ]},
       { t: "l", l: [
         "To hear wisdom’s whisper",
@@ -1007,7 +1007,7 @@ const CHAPTERS = [
       ]},
       { t: "ci", l: [
         "And they said,",
-        "“What is the form of the shining thread?",
+        "“What is the form of the Shining Thread?",
         "What is the resemblance of Sophia’s whisper?”",
         "The voice replied,"
       ]},
@@ -1015,14 +1015,14 @@ const CHAPTERS = [
         "Sophia is not one",
         "She is in excess of three",
         "And the three are",
-        "Passion, inspiration and contagion."
+        "Passion, Inspiration and Contagion."
       ]},
       { t: "l", l: [
         "These are the registers",
         "Through which you might perceive",
         "And embody in your actions",
         "The golden light of Rhagma",
-        "Illuminating the Phosphorus road."
+        "Illuminating the Phosphorus Road."
       ]},
       { t: "l", l: [
         "The first shard of Phosphorus",
@@ -1056,15 +1056,15 @@ const CHAPTERS = [
       ]},
       { t: "l", l: [
         "It is therefore Passion",
-        "Upon which reliance must be made",
+        "Upon which reliance must be forged",
         "When all else fails",
         "Listen to the call of the heart."
       ]},
       { t: "l", l: [
         "The second shard of Phosphorus",
-        "Its name is inspiration",
+        "Its name is Inspiration",
         "It is the urn",
-        "From which knowledge is concealed",
+        "In which knowledge is concealed",
         "And revealed."
       ]},
       { t: "l", l: [
@@ -1091,7 +1091,7 @@ const CHAPTERS = [
         "From which it comes."
       ]},
       { t: "l", l: [
-        "Inspirations cut",
+        "Inspiration’s cut",
         "Can be deep indeed",
         "And its repercussions",
         "Felt for millennia."
@@ -1117,7 +1117,7 @@ const CHAPTERS = [
         "It is the groundswell of the other",
         "Which calls us to approach",
         "As it stirs us to push on",
-        "To march the valley of Phosphorus."
+        "To march through the valley of Phosphorus."
       ]},
       { t: "l", l: [
         "As sparks approach sparks",
@@ -1135,7 +1135,7 @@ const CHAPTERS = [
         "Which Kakos cannot quash",
         "As its sum amounts",
         "To something vaster",
-        "Than its dim lit parts."
+        "Than its dimly lit parts."
       ]},
       { t: "l", l: [
         "It is therefore Contagion",
@@ -1146,9 +1146,9 @@ const CHAPTERS = [
       { t: "ci", l: [
         "They said,",
         "“I have known many",
-        "Who feel passion,",
-        "Recieve inspiration",
-        "And have tasted contagion",
+        "Who feel Passion,",
+        "Receive Inspiration",
+        "And have tasted Contagion",
         "But know nothing of Sophia, Rhagma and the rest.",
         "Need they learn the lessons you have told?”",
         "The voice replied,"
@@ -1201,15 +1201,15 @@ const CHAPTERS = [
         "Bring about its greater proximity."
       ]},
       { t: "ci", l: [
-        " They said",
+        "They said,",
         "“You speak of the light and faith",
         "You have shown me oblivion",
-        "And offered salvation",
+        "And offered salvation.",
         "Is this the voice",
         "Of the god of old books",
         "Or the gods of old stories",
         "Or something altogether other?”",
-        "They voice said,"
+        "The voice said,"
       ]},
       { t: "l", l: [
         "The spark of which we speak",
@@ -1223,7 +1223,7 @@ const CHAPTERS = [
         "Mohammed",
         "Rumi",
         "Zarathustra",
-        "Buddah",
+        "Buddha",
         "And countless others",
         "Call towards the same light",
         "Of Phosphorus."
@@ -1267,11 +1267,11 @@ const CHAPTERS = [
         "To wealth",
         "And towers",
         "And glory",
-        "And domination."
+        "And dominion."
       ]},
       { t: "l", l: [
         "It is their authorities",
-        "In whom you should doubt."
+        "Which you should doubt."
       ]},
       { t: "ci", l: ["And then the voice said,"] },
       { t: "l", l: [
@@ -1293,8 +1293,10 @@ const CHAPTERS = [
       ]},
       { t: "l", l: [
         "It is by accepting this conclusion",
-        "That we might learn to divert",
-        "From our death march towards it."
+        "That we might turn",
+        "From our death march towards it",
+        "And instead pursue the Shining Thread",
+        "Leading the way ahead."
       ]},
     ],
   },
@@ -1319,16 +1321,16 @@ const CHAPTERS = [
       { t: "l", l: [
         "Suffering is everywhere",
         "During this slow march towards the Sheer",
-        "But I promise you this",
+        "But be assured",
         "It will advance",
         "By one means or another."
       ]},
       { t: "l", l: [
-        "The choice is this",
+        "The choice is this:",
         "Experience the horrors of the Sheer",
         "The death of all that is beautiful",
         "Or feel Kakos’ rage",
-        "As you face the ruler of the world."
+        "As you confront the ruler of the world."
       ]},
       { t: "l", l: [
         "But surrender not",
@@ -1336,9 +1338,9 @@ const CHAPTERS = [
         "And it is illuminated."
       ]},
       { t: "l", l: [
-        "And there are 12 steps",
-        "And the first are the most painful",
-        "And most prolonged."
+        "And there are 12 long days ahead",
+        "And the first days are the longest",
+        "And most agonising."
       ]},
       { t: "l", l: [
         "But persist",
@@ -1351,7 +1353,7 @@ const CHAPTERS = [
         "And they said,",
         "“Tell us of each step in turn",
         "So we might follow Phosphorus",
-        "And hassen the construction of Dromos”",
+        "And hasten the construction of Dromos”",
         "The voice said,"
       ]},
       { t: "l", l: [
@@ -1384,7 +1386,7 @@ const CHAPTERS = [
         "And terrible prices paid."
       ]},
       { t: "l", l: [
-        "The stones of Dromos will be laid",
+        "The first stones of Dromos will be laid",
         "And destroyed on the same day",
         "And progress will not be made",
         "And both sides",
@@ -1412,7 +1414,7 @@ const CHAPTERS = [
         "And there will be great intensity."
       ]},
       { t: "l", l: [
-        "And that will be the hardest climb",
+        "And that will be the hardest trek",
         "To reach that day",
         "And begin to topple",
         "Those countless towers."
@@ -1475,7 +1477,7 @@ const CHAPTERS = [
       ]},
       { t: "l", l: [
         "There are others",
-        "Who have fratenised with Kakos",
+        "Who have fraternised with Kakos",
         "But whose spark of humanity",
         "May yet survive."
       ]},
@@ -1522,7 +1524,7 @@ const CHAPTERS = [
         "Of repurposing",
         "Into the bricks of Dromos.",
         "And those which are worth nothing",
-        "But bloodsoaked paper",
+        "But blood-soaked paper",
         "Which holds value no more."
       ]},
       { t: "l", l: [
@@ -1559,13 +1561,8 @@ const CHAPTERS = [
         "And those who shape the standard",
         "Will see the ninth day.",
         "Ninth, will be the clearing",
-        "Where the reminiscence of Kakarchia is cleared",
+        "Where the ruins of Kakarchia are cleared",
         "In accordance with the standard."
-      ]},
-      { t: "l", l: [
-        "And all of the world will then belong to all",
-        "And none will have a greater part",
-        "Than any other."
       ]},
       { t: "l", l: [
         "And on that day",
@@ -1584,7 +1581,9 @@ const CHAPTERS = [
         "Tenth, the standard will withdraw",
         "And hide its face",
         "For in the absence of Kakos",
-        "There will be no need for imposition.",
+        "There will be no need for imposition."
+      ]},
+      { t: "l", l: [
         "As a wise woman cautioned^5",
         "Against laying down rule or law",
         "The standard need not reappear",
@@ -1615,14 +1614,12 @@ const CHAPTERS = [
       ]},
       { t: "l", l: [
         "And those who are equal, who feel love and adore difference",
-        "Will see the final day."
-      ]},
-      { t: "l", l: [
+        "Will see the final day.",
         "And on the twelfth day",
         "The longest day of all",
         "The reconstruction will begin",
-        "And the mountain will be tall",
-        "But its ascent will be joyous",
+        "And the trek will be long",
+        "But its progression will be joyous",
         "And festivity will persist",
         "And the labour will be jubilant",
         "And the bounties will be excessive",
@@ -1642,7 +1639,7 @@ const CHAPTERS = [
       { t: "img", src: "images/plate-04.png" },
     ],
     footnotes: [
-      ["5", "The Gospel of Mary Magdaline."],
+      ["5", "The Gospel of Mary Magdalene."],
     ],
   },
   {
@@ -1653,16 +1650,16 @@ const CHAPTERS = [
         "And they said,",
         "“You spoke of the day of standards",
         "And the burying of Kakos",
-        "And the judgement of the demos",
+        "And the judgement of the Demos",
         "Against the sins of Kakos.",
         "What are those violations",
         "Which cannot be abided?”",
         "And the voice replied,"
       ]},
       { t: "l", l: [
-        "It is the demos who must decide",
+        "It is the Demos which must decide",
         "Where to set the standard",
-        "For the Dromos belongs to them alone."
+        "For Dromos belongs to them alone."
       ]},
       { t: "l", l: [
         "But twenty one crimes can be counted",
@@ -1679,7 +1676,7 @@ const CHAPTERS = [
       { t: "l", l: [
         "Second is genocide",
         "Against any people on Earth",
-        "Each of whom is divine."
+        "Each of whom contains divinity."
       ]},
       { t: "l", l: [
         "Third is the harm of innocents",
@@ -1708,7 +1705,7 @@ const CHAPTERS = [
         "Eighth is the promotion of hate",
         "Inequality",
         "And the pathologising of difference",
-        "Since their inversions are divine."
+        "Since their inversions are sacred."
       ]},
       { t: "l", l: [
         "Ninth is the creation of eyes everywhere",
@@ -1716,7 +1713,7 @@ const CHAPTERS = [
       ]},
       { t: "l", l: [
         "Tenth is the silencing of truth tellers",
-        "For the authentic word leads down the Phosphorus path."
+        "For their words lead down the Phosphorus path."
       ]},
       { t: "l", l: [
         "Eleventh is the mass violation of body or mind",
@@ -1733,12 +1730,12 @@ const CHAPTERS = [
         "And need not be ransacked."
       ]},
       { t: "l", l: [
-        "Fourteenth is unnatural dependency",
+        "Fourteenth is the invocation of unnatural dependency",
         "For the Earth is abundant",
         "And no one need go hungry."
       ]},
       { t: "l", l: [
-        "Fifteenth is profittering",
+        "Fifteenth is profiteering",
         "Since gains in times of suffering are an abomination."
       ]},
       { t: "l", l: [
@@ -1746,7 +1743,7 @@ const CHAPTERS = [
         "Wherein wrongs are delegated",
         "Deputised",
         "Or done through proximate machines",
-        "They are no less despicable."
+        "And yet are no less despicable."
       ]},
       { t: "l", l: [
         "Seventeenth is distraction by means of othering",
@@ -1782,7 +1779,7 @@ const CHAPTERS = [
         "And they said,",
         "“Can rehabilitation be found following these transgressions?",
         "Or are they to be held in absolute?”",
-        "She said,"
+        "The voice replied,"
       ]},
       { t: "l", l: [
         "Judgement must be made",
@@ -1816,7 +1813,7 @@ const CHAPTERS = [
         "So consider in proportion",
         "Of scale and size",
         "And proximity to the heart of Kakos",
-        "When that thin tightrope is walked."
+        "How that thin tightrope is walked."
       ]},
       { t: "l", l: [
         "Wherever that line is drawn",
@@ -1843,7 +1840,7 @@ const CHAPTERS = [
         "Is merely a pleasant fantasy",
         "If you do not know",
         "Of the one who stands",
-        "Between she and us."
+        "Between she and we."
       ]},
       { t: "l", l: [
         "Therefore learn",
@@ -1973,7 +1970,7 @@ const CHAPTERS = [
       ]},
       { t: "l", l: [
         "But do not be mistaken",
-        "That just as Rome was not built in a day",
+        "Just as Rome was not built in a day",
         "Neither was the greater empire",
         "That precedes and follows it",
         "Through the history of civilisation",
@@ -2015,7 +2012,7 @@ const CHAPTERS = [
       { t: "l", l: [
         "His bounty must grow",
         "And we must not approach it",
-        "Lest he bears his cavernous teeth."
+        "Lest he bares his cavernous teeth."
       ]},
       { t: "l", l: [
         "Until the only choice",
@@ -2024,8 +2021,8 @@ const CHAPTERS = [
       ]},
       { t: "l", l: [
         "But if he fears",
-        "That more than two steps might be taken",
-        "Towards his illgotten abundance",
+        "That two steps might be taken",
+        "Towards his ill-gotten abundance",
         "He will shrink",
         "And quake in fear",
         "And speak of concessions",
@@ -2042,7 +2039,7 @@ const CHAPTERS = [
       ]},
       { t: "l", l: [
         "Never trust his words",
-        "For he cares for nothing but his mountain",
+        "For he cares for nothing but his towers",
         "For if he cared for even himself",
         "He would not run headlong",
         "Towards the Sheer."
@@ -2081,13 +2078,13 @@ const CHAPTERS = [
         "With promises of unnatural growth."
       ]},
       { t: "l", l: [
-        "And those husks in whom no seed grows",
+        "And those husks in which no seed grows",
         "They are his vessels."
       ]},
       { t: "l", l: [
         "Look upon your leaders and judge",
         "Is their seed infected",
-        "With promises of finding favor?"
+        "With promises of finding favour?"
       ]},
       { t: "l", l: [
         "Or are they soulless husks",
@@ -2118,10 +2115,13 @@ const CHAPTERS = [
         "But atoms of currency."
       ]},
       { t: "l", l: [
-        "Rather, mass is held by few with the power to act",
+        "Rather, mass is held by those with the power to act",
         "And the fewer they are",
-        "The greater the proportion of their power",
+        "The greater the proportion of their power."
+      ]},
+      { t: "l", l: [
         "It is they who pull its bony strings",
+        "Who give orders to misguided pawns",
         "And animate those dreadful towers."
       ]},
       { t: "l", l: [
@@ -2137,8 +2137,8 @@ const CHAPTERS = [
         "The Sheer",
         "The corrosive catalyst",
         "And the awesome tower of matter",
-        "If the plermoa",
-        "And it’s wise aspect",
+        "If the Pleroma",
+        "And its wise aspect",
         "Are free of malevolence?”",
         "And the voice responded,"
       ]},
@@ -2149,7 +2149,7 @@ const CHAPTERS = [
         "By his own hubris",
         "He promptly learned that humankind",
         "Possessed powers beyond his own",
-        "Powers which might one day destroy him",
+        "Powers which might destroy him",
         "Powers of divinity as well as violence."
       ]},
       { t: "l", l: [
@@ -2176,7 +2176,7 @@ const CHAPTERS = [
       { t: "l", l: [
         "And he purloined its shape",
         "And produced an inverted spark",
-        "Which resembled his looming rottenness",
+        "Which resembled his looming rot",
         "And it was called the artificial spirit",
         "And it led us astray."
       ]},
@@ -2190,8 +2190,8 @@ const CHAPTERS = [
         "And no communion was found within",
         "And it led us astray."
       ]},
-      { t: "l", l: ["As it was said long ago,"] },
       { t: "l", l: [
+        "As it was said long ago,",
         "“They brought into being",
         "Gold and silver",
         "Presents and money",
@@ -2280,7 +2280,7 @@ const CHAPTERS = [
         "When good ones fall",
         "Their spark departs",
         "And like a string",
-        "It threads through the phosphorus path",
+        "It threads through the Phosphorus path",
         "Leaving one more paving stone in place",
         "And then",
         "Looping its knot",
@@ -2373,7 +2373,9 @@ const CHAPTERS = [
         "And they said,",
         "“You have told us of ends",
         "Now tell us of beginnings",
-        "How did Kakos comes to be our Leviathan?”",
+        "How did Kakos come to be our Leviathan?”"
+      ]},
+      { t: "ci", l: [
         "And the voice lifted them high",
         "And took them into the sky",
         "And beyond the clouds",
@@ -2391,8 +2393,7 @@ const CHAPTERS = [
         "And the round canvas began to change before their eyes",
         "And they saw how the world was built",
         "With malevolence in mind",
-        "But conditioned by beauty",
-        "And truth."
+        "But conditioned by beauty."
       ]},
       { t: "ci", l: [
         "And beauty grew as life emerged",
@@ -2462,7 +2463,7 @@ const CHAPTERS = [
         "And the members of the encampment gladly acquiesced."
       ]},
       { t: "ci", l: [
-        "And what they constructed was a thing of beauty",
+        "And what they constructed was a thing of magnificence",
         "And it could be seen far and wide",
         "And the neighbouring encampments saw what they had built",
         "And they were in awe",
@@ -2483,7 +2484,8 @@ const CHAPTERS = [
         "Makros grew too in equal measure."
       ]},
       { t: "ci", l: [
-        "Soon, spindles littered the land and filled the sky",
+        "Soon, spindles littered the land",
+        "And filled the sky",
         "From here until the horizon",
         "And it was right to call it an empire."
       ]},
@@ -2492,18 +2494,16 @@ const CHAPTERS = [
         "The one named Makros",
         "The face of the world could be seen as one",
         "And its gaze did see each of them",
-        "And it could see which of them avoided its gaze",
+        "And it could see which of them diverted their eyes",
         "And it looked down on them."
       ]},
       { t: "ci", l: [
         "Those who avoided the gaze of Makros",
         "And spoke unkind words in dark corners",
-        "When they approach its roots",
+        "When they approached its roots",
         "Awaiting the nourishment upon which they had come to rely",
         "They found the roots dry and unopened",
-        "And they became hungry."
-      ]},
-      { t: "ci", l: [
+        "And they became hungry.",
         "But those who gave praise unto Makros",
         "And beheld its authority",
         "They ate well",
@@ -2530,7 +2530,9 @@ const CHAPTERS = [
       { t: "ci", l: [
         "And then Makros said,",
         "“Speak no more”",
-        "And they were silent.",
+        "And they were silent."
+      ]},
+      { t: "ci", l: [
         "But there were still those who would murmur",
         "And the sound was like knives in the ears of Makros",
         "But they spoke not of spindles",
@@ -2542,16 +2544,15 @@ const CHAPTERS = [
         "“Those who reveal the ones who murmur will eat threefold”",
         "But the murmurs only grew",
         "And there were those who said that Makros was hollow",
-        "And the murmurs became talk and the talk became chatter",
+        "And the murmurs became talk",
+        "And the talk became chatter",
         "And Makros quaked."
       ]},
       { t: "ci", l: [
-        "And those who spoke",
-        "And approached the roots of the spindle",
-        "Would find them dry",
-        "And they became hungry",
+        "And as the whispers grew",
+        "The bounties lessened",
         "And there was not enough to go around",
-        "And they blamed those who murmured."
+        "And they blamed it upon those who murmured."
       ]},
       { t: "ci", l: [
         "But then one of the murmurers said,",
@@ -2559,7 +2560,8 @@ const CHAPTERS = [
         "Let us reach the roots as one and we will find our bounty.”",
         "And the others were convinced",
         "Because they were hungry",
-        "And the ones who spoke were well practiced."
+        "And the ones who spoke",
+        "Were well practiced."
       ]},
       { t: "ci", l: [
         "And so the people marched as one towards the spindle",
@@ -2572,21 +2574,22 @@ const CHAPTERS = [
         "And it has innovated.”"
       ]},
       { t: "ci", l: [
-        "And the people were confused and disoriented",
+        "And the people were confused",
         "And they dispersed to their homes",
         "And in each of their homes they found a little spindle",
         "And it looked at them",
         "And they at it",
         "And it provided them with food",
-        "Though it was a little less than it had once been",
+        "Though it was a meager meal",
         "And a little more dull of colour."
       ]},
       { t: "ci", l: [
         "And then the little spindles began to whisper",
-        "And they told each of them to be cautious",
+        "And they told the people to be cautious",
+        "To look over their shoulder",
         "And it helped them to form their thoughts",
         "And to suspect those who murmur",
-        "For they disrespect the demos."
+        "For they disrespect the Demos."
       ]},
       { t: "ci", l: [
         "And the ones who murmured found no food within",
@@ -2597,7 +2600,7 @@ const CHAPTERS = [
         "And Makros said,",
         "“It is the thin ones who made food grey",
         "For they hate the colours of agreement",
-        "And they have made the harvests meager”",
+        "And they have made the harvests meagre\"",
         "And they remained in their rooms",
         "And they ate their dull food",
         "And they resented the thin ones",
@@ -2610,14 +2613,14 @@ const CHAPTERS = [
         "And it was truthful",
         "And so they ran to the streets",
         "And bellowed what they had seen",
-        "And the yelled as loudly as they could",
+        "And they yelled as loudly as they could",
         "And no one listened",
         "And they ran and ran",
-        "Until they met the foot a Makros",
+        "Until they met the foot of Makros",
         "Whose roots had become rotten",
-        "And the thin one parsed the twisted spindle",
+        "And they parsed the twisted spindle",
         "And found nothing there within",
-        "And so they began to scale the its interior."
+        "And so they began to scale its interior."
       ]},
       { t: "ci", l: [
         "And upon reaching Makros’ peak",
@@ -2633,10 +2636,8 @@ const CHAPTERS = [
         "“Open your eyes and see",
         "That for every spindle there is a circle",
         "And it resides below",
-        "And in every circle there exists plentitudes",
-        "If only you would dig to find them.”"
-      ]},
-      { t: "ci", l: [
+        "And in every circle there exists plenitudes",
+        "If only you would dig to find them.”",
         "And the people mistook the voice for Makros",
         "For it was loud and bellowing",
         "And came from that which sanctioned voice",
@@ -2707,19 +2708,19 @@ const CHAPTERS = [
         "And yet do not know her nature",
         "The one you call Duosophia",
         "Tell us of her”",
-        "And voice smiled",
+        "And the voice smiled",
         "And whispered gently,"
       ]},
       { t: "l", l: [
         "She is the one made of light",
-        "Who lays beyond Rhagma",
+        "Who lies beyond Rhagma",
         "Who emanates the path of Phosphorus",
         "Who deceived thrice the one called Kakos",
         "So that you might defy his grip."
       ]},
       { t: "l", l: [
         "She is the one called Duosophia",
-        "The second wisdom",
+        "The Second Wisdom",
         "The deus ex machina",
         "Whose arrival cannot be relied upon",
         "But invoked only through acts",
@@ -2727,7 +2728,7 @@ const CHAPTERS = [
       ]},
       { t: "l", l: [
         "And her names are many",
-        "She is the one named Epinoia of light",
+        "She is the one named Epinoia of Light",
         "And she is the one named Hendyo",
         "And she is the one named Providence",
         "And she is the one named the Body of Production and Reproduction",
@@ -2737,7 +2738,7 @@ const CHAPTERS = [
         "And she is the one named Spirit of Life",
         "And she is the one named the Body of Organs",
         "And she is the one named Mother of the Living",
-        "And she is the one named Hetrogyne",
+        "And she is the one named Heterogyne",
         "And she will answer to the name she is given",
         "For she cares only for their deeds."
       ]},
@@ -2772,7 +2773,7 @@ const CHAPTERS = [
       ]},
       { t: "l", l: [
         "And it is not humanity who needs redemption",
-        "But Sophia’s eer",
+        "But Sophia’s err",
         "We need only to validate",
         "Her whisper",
         "Which provides a key.",
@@ -2796,11 +2797,11 @@ const CHAPTERS = [
         "“If she is a being of such power",
         "One who can trick Kakos thrice",
         "And set in motion our redemption",
-        "Why does she await her cue",
+        "Why does she await our cue",
         "At the end of time",
         "And not intervene now",
         "To save us from our condition”",
-        "And they voice replied,"
+        "And the voice replied,"
       ]},
       { t: "l", l: [
         "Power is a tool of domination",
@@ -2820,12 +2821,12 @@ const CHAPTERS = [
         "Only we",
         "That chimera of light and dark",
         "Of wisdom and ignorance",
-        "Of adoration and abhoration",
+        "Of adoration and abhorration",
         "Can use force to bring peace into being."
       ]},
       { t: "l", l: [
         "Once Dromos is constructed",
-        "The Phosphours path followed",
+        "The Phosphorus path followed",
         "And Rhagma is found",
         "Only then",
         "Will we find Duosophia waiting",
@@ -2852,7 +2853,7 @@ const CHAPTERS = [
       ]},
       { t: "l", l: [
         "We must hold that mirror",
-        "Up to the shining thread",
+        "Up to the Shining Thread",
         "And build an image of Duosophia",
         "Which will shelter us through his storm."
       ]},
@@ -2869,7 +2870,7 @@ const CHAPTERS = [
         "Defying his iron law",
         "Sometimes sustained for a while",
         "Before being destroyed",
-        "Or coopted",
+        "Or co-opted",
         "Or merely remaining modest."
       ]},
       { t: "l", l: [
@@ -2904,8 +2905,8 @@ const CHAPTERS = [
         "The reply said,"
       ]},
       { t: "l", l: [
-        "This graceful God",
-        "If she is a God",
+        "This graceful god",
+        "If she is a god",
         "Is no creator",
         "But rather a creation yet to come."
       ]},
@@ -2914,7 +2915,7 @@ const CHAPTERS = [
         "But a womb",
         "Waiting for us to return to her.",
         "She offers no challenge",
-        "To Gods nor guardians",
+        "To gods nor guardians",
         "But only to that entity",
         "Which rules the earth",
         "And keeps us from flourishing."
@@ -2952,7 +2953,7 @@ const CHAPTERS = [
         "Nor hers in ours."
       ]},
       { t: "l", l: [
-        "No category captures her",
+        "No category imprisons her",
         "And naming her ‘she’",
         "Is merely an abbreviation."
       ]},
@@ -3023,7 +3024,7 @@ const CHAPTERS = [
         "That most pure form of togetherness",
         "From a time long ago",
         "Before the first trauma",
-        "Which severed us from the pleroma",
+        "Which severed us from the Pleroma",
         "And cast us into the world."
       ]},
       { t: "ci", l: ["And the voice said,"] },
@@ -3043,7 +3044,7 @@ const CHAPTERS = [
         "But the other which it holds",
         "Is not quite other",
         "It is that self which is other",
-        "It is insideness and outsideness",
+        "It is interiority and exteriority",
         "The threshold between one and two."
       ]},
       { t: "ci", l: [
@@ -3181,10 +3182,10 @@ const CHAPTERS = [
         "But what can be known",
         "Is the structure of the worldly body.",
         "That neutral ground",
-        "The word of the pleroma",
+        "The word of the Pleroma",
         "That second deception",
         "The beautiful structure",
-        "Infused with this oppressive world."
+        "Infused within this oppressive world."
       ]},
       { t: "ci", l: [
         "And they were pulled from the light-bearing body",
@@ -3201,7 +3202,7 @@ const CHAPTERS = [
         "Despite its presence there",
         "Despite its physicality",
         "It was not truly a body",
-        " But a pattern of connections."
+        "But a pattern of connections."
       ]},
       { t: "ci", l: [
         "And it had many parts",
@@ -3247,7 +3248,7 @@ const CHAPTERS = [
       { t: "l", l: [
         "And this is a thing",
         "Which must be understood",
-        "By the ones who walk the phosphorus path."
+        "By the ones who walk the Phosphorus Path."
       ]},
       { t: "l", l: [
         "And it has been called the architecture",
@@ -3284,7 +3285,7 @@ const CHAPTERS = [
       { t: "l", l: [
         "So learn from its architecture",
         "And use it towards good ends",
-        "But know it's indecision",
+        "But know its indecision",
         "And know that it may devour us all",
         "If you step too close."
       ]},
@@ -3326,7 +3327,7 @@ const CHAPTERS = [
         "It was the form of a person",
         "Standing there",
         "In the abyss of space",
-        "And its features were indeterminate",
+        "And their features were indeterminate",
         "Young and old",
         "Strong and weak",
         "Changing from moment to moment",
@@ -3389,7 +3390,7 @@ const CHAPTERS = [
         "Though it is miserable",
         "And it is battered",
         "And it is weakened",
-        "This body still holds great power",
+        "This body holds great power",
         "Power which exceeds",
         "Now and always",
         "The power of Kakos."
@@ -3400,11 +3401,11 @@ const CHAPTERS = [
         "This sorry sight",
         "Exceed the power",
         "Of that which rules the world?”",
-        "The voice said,"
+        "And the voice said,"
       ]},
       { t: "l", l: [
         "He is tiny",
-        "Though his machinery is large",
+        "Though his machinery is great",
         "But this body",
         "The Body Undone",
         "Is vastness beyond measure",
@@ -3425,28 +3426,28 @@ const CHAPTERS = [
         "Within sight of the figure",
         "With a great tower at its centre",
         "And it angered the Body Undone",
-        "And its face began to put curses upon the city",
-        "And it whispered strange rituals",
-        "And it uttered strange words",
+        "And their face began to put curses upon the city",
+        "And they whispered strange rituals",
+        "And they uttered strange words",
         "And set strange spirits against the city."
       ]},
       { t: "ci", l: ["And the voice said,"] },
       { t: "l", l: ["This is the form of the hex."] },
       { t: "ci", l: [
         "And then the figure began to transform",
-        "And it dissolved into a great singular mass",
+        "And they dissolved into a great singular mass",
         "Moving as one",
         "Towards the city",
         "An unstoppable hoard",
         "A great wave of persons",
         "Set upon a goal."
       ]},
-      { t: "ci", l: ["And they voice said,"] },
+      { t: "ci", l: ["And the voice said,"] },
       { t: "l", l: ["This is the form of the mass."] },
       { t: "ci", l: [
         "And when the mass had broken the gates",
         "And entered the city",
-        "It divided into pieces",
+        "They divided into pieces",
         "Splintering off",
         "Dividing and regrouping",
         "Invisible and changing",
@@ -3483,14 +3484,14 @@ const CHAPTERS = [
       { t: "l", l: ["This is the form of obstruction."] },
       { t: "ci", l: [
         "And the form laid secret paths",
-        "Through which is shared",
+        "Through which it shared",
         "And transported",
         "And distributed",
         "And protected",
-        "And grew its strength",
+        "And grew their strength",
         "Within the city’s walls."
       ]},
-      { t: "ci", l: ["And they voice said,"] },
+      { t: "ci", l: ["And the voice said,"] },
       { t: "l", l: ["This is the form of circulation."] },
       { t: "ci", l: [
         "And the form built new structures",
@@ -3507,7 +3508,7 @@ const CHAPTERS = [
       { t: "l", l: ["This is the form of eyes and hands."] },
       { t: "ci", l: [
         "And the tower collapsed",
-        "Under the weight of these strategems",
+        "Under the weight of these stratagems",
         "And the city became flat",
         "And tightly woven."
       ]},
@@ -3530,7 +3531,7 @@ const CHAPTERS = [
         "When the voice said,"
       ]},
       { t: "l", l: [
-        "To follow the path of Phosophus",
+        "To follow the path of Phosphorus",
         "You must walk with these three forms",
         "And keep your head facing Rhagma."
       ]},
@@ -3539,7 +3540,7 @@ const CHAPTERS = [
         "Now learn it",
         "Understand it",
         "And work alongside it",
-        "So that you may pursue the shining thread."
+        "So that you may pursue the Shining Thread."
       ]},
     ],
   },
@@ -3631,7 +3632,7 @@ const CHAPTERS = [
         "And she exists in all of those",
         "Who have not snuffed her out",
         "And replaced her",
-        "With the paracytic spirit.",
+        "With the parasitic spirit.",
         "And she grows brighter",
         "In knowledge",
         "In meditation",
@@ -3654,7 +3655,7 @@ const CHAPTERS = [
       { t: "l", l: ["And she is given through the word of her mother."] },
       { t: "l", l: ["And she is a shard of Contagion."] },
       { t: "l", l: ["And she is sustained through her breast."] },
-      { t: "l", l: ["And she known through the Body Ambivalent."] },
+      { t: "l", l: ["And she is known through the Body Ambivalent."] },
       { t: "l", l: ["And she is equal with all."] },
       { t: "l", l: ["And she is a thing of middles."] },
       { t: "l", l: [
@@ -3704,7 +3705,7 @@ const CHAPTERS = [
       { t: "l", l: ["And she is given through the whisper of her mother."] },
       { t: "l", l: ["And she is a shard of Inspiration."] },
       { t: "l", l: ["And she is held within the womb."] },
-      { t: "l", l: ["And she known through the Body of Production and Reproduction."] },
+      { t: "l", l: ["And she is known through the Body of Production and Reproduction."] },
       { t: "l", l: ["And she loves all."] },
       { t: "l", l: ["And she is a thing of ends."] },
       { t: "l", l: [
@@ -3715,7 +3716,7 @@ const CHAPTERS = [
       ]},
       { t: "l", l: [
         "And she is the final cause",
-        "Towards which we ought chase.",
+        "Towards which we ought give chase.",
         "And she is a myth",
         "Who must be rendered a reality",
         "If our children are to live",
@@ -3743,6 +3744,8 @@ const CHAPTERS = [
         "SO THAT ONE DAY",
         "WE MAY MANIFEST."
       ]},
+      { t: "img", src: "images/plate-14.png" },
+      { t: "r", l: ["Contact: sophiaheath@proton.me"] },
     ],
   },
 ];
