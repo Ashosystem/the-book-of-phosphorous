@@ -28,9 +28,11 @@ function plateFallback(img) {
   .stanza.left .stanza-lines, .stanza.right .stanza-lines {
     width: auto !important; max-width: none !important; min-width: 0 !important;
   }
-  .chapter-image { text-align: center; }
-  .chapter-plate { display: block; max-width: 70%; height: auto; margin: 2.6rem auto;
-    background: #fff; padding: 1.25rem; border-radius: 2px; box-sizing: border-box; }
+  .chapter-image { text-align: center; overflow: visible; }
+  .chapter-plate { display: block; height: auto; margin: 2.6rem auto;
+    background: #fff; padding: 1.25rem; border-radius: 2px; box-sizing: border-box;
+    max-width: calc(100vw - 32px); }
+  .chapter-image .chapter-plate { flex-shrink: 0; }
   sup.fn-ref { font-size: .62em; vertical-align: super; line-height: 0; margin-left: 1px; }
   .chapter-footnotes { margin-top: 3.5rem; font-size: .86rem; opacity: .82; }
   .chapter-footnotes hr { border: none; border-top: 1px solid currentColor; opacity: .25; width: 38%; margin: 0 0 1rem; }
@@ -329,7 +331,7 @@ const CHAPTERS = [
         "And when the voice had finished speaking",
         "It presented to them an image."
       ]},
-      { t: "img", src: "images/plate-01.png" },
+      { t: "img", src: "images/plate-01.png", w: 119 },
     ],
     footnotes: [
       ["1", "The Secret Book of John, or the Apocraphon of John, is an early Christian Gnostic text. An understanding of it is required to understand the context in which The Book of Phosphorus is set."],
@@ -780,7 +782,7 @@ const CHAPTERS = [
         "Barely visible",
         "But there nonetheless."
       ]},
-      { t: "img", src: "images/plate-02.png" },
+      { t: "img", src: "images/plate-02.png", w: 106 },
       { t: "ci", l: [
         "And they peered closely",
         "At the illuminated cleft",
@@ -1238,7 +1240,7 @@ const CHAPTERS = [
         "Was a shard of illumination",
         "Emanating from the fissure."
       ]},
-      { t: "img", src: "images/plate-03.png" },
+      { t: "img", src: "images/plate-03.png", w: 118 },
       { t: "ci", l: [
         "And they said,",
         "“If every great teacher",
@@ -1636,7 +1638,7 @@ const CHAPTERS = [
         "Forevermore",
         "By Duosophia."
       ]},
-      { t: "img", src: "images/plate-04.png" },
+      { t: "img", src: "images/plate-04.png", w: 123 },
     ],
     footnotes: [
       ["5", "The Gospel of Mary Magdalene."],
@@ -1774,7 +1776,7 @@ const CHAPTERS = [
         "And cannot be extant",
         "By the day of standards."
       ]},
-      { t: "img", src: "images/plate-05.png" },
+      { t: "img", src: "images/plate-05.png", w: 106 },
       { t: "ci", l: [
         "And they said,",
         "“Can rehabilitation be found following these transgressions?",
@@ -1908,7 +1910,7 @@ const CHAPTERS = [
         "And you will be deaf",
         "Until the maggots are upon you."
       ]},
-      { t: "img", src: "images/plate-06.png" },
+      { t: "img", src: "images/plate-06.png", w: 124 },
       { t: "ci", l: [
         "They shuddered",
         "And the voice lifted them up",
@@ -2362,7 +2364,7 @@ const CHAPTERS = [
         "And their toil too",
         "Will be repaid."
       ]},
-      { t: "img", src: "images/plate-07.png" },
+      { t: "img", src: "images/plate-07.png", w: 119 },
     ],
   },
   {
@@ -2683,7 +2685,7 @@ const CHAPTERS = [
         "And there they saw a flat round emblem",
         "And it was magnificent."
       ]},
-      { t: "img", src: "images/plate-08.png" },
+      { t: "img", src: "images/plate-08.png", w: 102 },
       { t: "ci", l: [
         "And so",
         "They took the shards of Makros",
@@ -2930,7 +2932,7 @@ const CHAPTERS = [
         "Phosphorus is that path",
         "And Dromos the vehicle."
       ]},
-      { t: "img", src: "images/plate-09.png" },
+      { t: "img", src: "images/plate-09.png", w: 119 },
     ],
     footnotes: [
       ["7", "The Secret Book of John."],
@@ -3522,7 +3524,7 @@ const CHAPTERS = [
         "And in their righteous anger",
         "They will devour that imperious demon."
       ]},
-      { t: "img", src: "images/plate-10.png" },
+      { t: "img", src: "images/plate-10.png", w: 128 },
       { t: "ci", l: [
         "And then they saw the three bodies come together",
         "And each was layered upon the next",
@@ -3617,7 +3619,7 @@ const CHAPTERS = [
         "Separated from itself",
         "As if lacerated by a spindle."
       ]},
-      { t: "img", src: "images/plate-11.png" },
+      { t: "img", src: "images/plate-11.png", w: 134 },
       { t: "ci", l: ["And they said,"] },
       { t: "l", l: ["She is the faint spark of Phosphorus."] },
       { t: "l", l: ["And she is given through the breath of her mother."] },
@@ -3649,7 +3651,7 @@ const CHAPTERS = [
         "The heath appeared like a clean lake",
         "Reflecting each of them."
       ]},
-      { t: "img", src: "images/plate-12.png" },
+      { t: "img", src: "images/plate-12.png", w: 121 },
       { t: "ci", l: ["And they said,"] },
       { t: "l", l: ["She is the threaded needle of Phosphorus."] },
       { t: "l", l: ["And she is given through the word of her mother."] },
@@ -3699,7 +3701,7 @@ const CHAPTERS = [
         "And all were equal",
         "And all were adored in their difference."
       ]},
-      { t: "img", src: "images/plate-13.png" },
+      { t: "img", src: "images/plate-13.png", w: 134 },
       { t: "ci", l: ["And the voice said,"] },
       { t: "l", l: ["She casts the light of Phosphorus."] },
       { t: "l", l: ["And she is given through the whisper of her mother."] },
@@ -3744,7 +3746,7 @@ const CHAPTERS = [
         "SO THAT ONE DAY",
         "WE MAY MANIFEST."
       ]},
-      { t: "img", src: "images/plate-14.png" },
+      { t: "img", src: "images/plate-14.png", w: 36 },
       { t: "r", l: ["Contact: sophiaheath@proton.me"] },
     ],
   },
@@ -3773,8 +3775,11 @@ function renderChapter(ch) {
   let verse = 0;
   const html = ch.sections.map(s => {
     if (s.t === 'img') {
+      // s.w is the plate's printed width as a % of the PDF text column,
+      // so plates bleed past the text column exactly as they do in the book.
+      const wStyle = s.w ? ` style="width:${s.w}%"` : '';
       return s.src
-        ? `<div class="chapter-image"><img class="chapter-plate" src="${s.src}" alt="" loading="lazy" onerror="plateFallback(this)"></div>`
+        ? `<div class="chapter-image"><img class="chapter-plate" src="${s.src}" alt="" loading="lazy"${wStyle} onerror="plateFallback(this)"></div>`
         : `<div class="chapter-image">${duosophis()}</div>`;
     }
     const cls = s.t === 'ci' ? 'stanza centered italic'
