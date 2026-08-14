@@ -4,8 +4,10 @@
 const SHOW_VERSE_NUMBERS = false;
 
 // Convert a "^N" marker in (already-escaped) text into a superscript ref.
+// The ref is focusable and carries its number so the footnote popover can
+// look the text up on hover/tap.
 function fnSup(str) {
-  return str.replace(/\^(\d+)/g, '<sup class="fn-ref">$1</sup>');
+  return str.replace(/\^(\d+)/g, '<sup class="fn-ref" data-fn="$1" tabindex="0" role="button" aria-label="Footnote $1">$1</sup>');
 }
 
 // If an illustration plate file is missing, fall back to the symbol SVG.
@@ -33,11 +35,18 @@ function plateFallback(img) {
     background: #fff; padding: 1.25rem; border-radius: 2px; box-sizing: border-box;
     max-width: calc(100vw - 32px); }
   .chapter-image .chapter-plate { flex-shrink: 0; }
-  sup.fn-ref { font-size: .62em; vertical-align: super; line-height: 0; margin-left: 1px; }
-  .chapter-footnotes { margin-top: 3.5rem; font-size: .86rem; opacity: .82; }
-  .chapter-footnotes hr { border: none; border-top: 1px solid currentColor; opacity: .25; width: 38%; margin: 0 0 1rem; }
-  .chapter-footnotes .fn-item { margin: .5rem 0; line-height: 1.55; }
-  .chapter-footnotes .fn-item sup { margin-right: .4em; }
+  sup.fn-ref { font-size: .62em; vertical-align: super; line-height: 0; margin-left: 1px;
+    cursor: pointer; color: var(--accent, #c9a86c); padding: 0 2px; outline: none; }
+  sup.fn-ref:hover, sup.fn-ref:focus { text-decoration: underline; }
+  .fn-pop { position: fixed; z-index: 400; max-width: 340px;
+    background: var(--bg-raised, #232323); color: var(--text, #ece7df);
+    border: 1px solid var(--border, #2e2e2e); border-radius: 6px;
+    padding: .7rem .95rem; font-size: .84rem; line-height: 1.6; font-style: normal;
+    box-shadow: 0 10px 30px rgba(0,0,0,.55);
+    opacity: 0; pointer-events: none; transition: opacity .12s ease; }
+  .fn-pop.show { opacity: 1; pointer-events: auto; }
+  .fn-pop .fn-num { color: var(--accent, #c9a86c); margin-right: .5em; font-size: .8em;
+    vertical-align: super; }
   `;
   const el = document.createElement('style');
   el.textContent = css;
@@ -3795,12 +3804,9 @@ function renderChapter(ch) {
     return `<div class="${cls}">${mark}<div class="stanza-lines">${lines}</div></div>`;
   }).join('');
 
-  const footnotes = (ch.footnotes && ch.footnotes.length)
-    ? `<div class="chapter-footnotes"><hr>${ch.footnotes.map(f =>
-        `<p class="fn-item"><sup>${escHtml(String(f[0]))}</sup>${fnSup(escHtml(f[1]))}</p>`).join('')}</div>`
-    : '';
-
-  return html + footnotes;
+  // Footnotes are shown as floating popovers on their refs (see fn-pop
+  // logic below) instead of a list at the bottom of the chapter.
+  return html;
 }
 
 function escHtml(str) {
@@ -3909,6 +3915,91 @@ async function share() {
 // ── TOAST ─────────────────────────────────────────────────────────────────────
 
 let toastTimer;
+
+// ── FOOTNOTE POPOVER ─────────────────────────────────────────────────────────
+// One reusable floating box. Hover (or keyboard focus) shows it; click/tap
+// pins it open until you click elsewhere, press Escape, or scroll.
+
+let fnPop = null;
+let fnPinnedRef = null;
+
+function fnLookup(n) {
+  const ch = CHAPTERS[currentChapter - 1];
+  const f = (ch.footnotes || []).find(f => String(f[0]) === String(n));
+  return f ? f[1] : '';
+}
+
+function showFnPop(ref) {
+  const text = fnLookup(ref.dataset.fn);
+  if (!text) return;
+  if (!fnPop) {
+    fnPop = document.createElement('div');
+    fnPop.className = 'fn-pop';
+    document.body.appendChild(fnPop);
+  }
+  fnPop.innerHTML = '';
+  const num = document.createElement('span');
+  num.className = 'fn-num';
+  num.textContent = ref.dataset.fn;
+  fnPop.appendChild(num);
+  fnPop.appendChild(document.createTextNode(text));
+  fnPop.style.maxWidth = Math.min(340, window.innerWidth - 24) + 'px';
+  fnPop.classList.add('show');
+
+  // Position below the ref, clamped to the viewport; flip above if cramped.
+  const r = ref.getBoundingClientRect();
+  fnPop.style.left = '0px';
+  fnPop.style.top = '0px';
+  const box = fnPop.getBoundingClientRect();
+  const x = Math.min(Math.max(12, r.left - 24), window.innerWidth - box.width - 12);
+  let y = r.bottom + 10;
+  if (y + box.height > window.innerHeight - 12) y = r.top - box.height - 10;
+  fnPop.style.left = x + 'px';
+  fnPop.style.top = y + 'px';
+}
+
+function hideFnPop() {
+  if (fnPop) fnPop.classList.remove('show');
+  fnPinnedRef = null;
+}
+
+document.addEventListener('mouseover', (e) => {
+  const ref = e.target.closest && e.target.closest('sup.fn-ref');
+  if (ref) showFnPop(ref);
+});
+document.addEventListener('mouseout', (e) => {
+  if (fnPinnedRef) return;
+  const ref = e.target.closest && e.target.closest('sup.fn-ref');
+  if (ref && !(e.relatedTarget && e.relatedTarget.closest && e.relatedTarget.closest('.fn-pop'))) {
+    hideFnPop();
+  }
+});
+document.addEventListener('click', (e) => {
+  const ref = e.target.closest && e.target.closest('sup.fn-ref');
+  if (ref) {
+    if (fnPinnedRef === ref) { hideFnPop(); return; }
+    fnPinnedRef = ref;
+    showFnPop(ref);
+  } else if (fnPinnedRef && !e.target.closest('.fn-pop')) {
+    hideFnPop();
+  }
+});
+document.addEventListener('focusin', (e) => {
+  if (e.target.matches && e.target.matches('sup.fn-ref')) showFnPop(e.target);
+});
+document.addEventListener('focusout', (e) => {
+  if (!fnPinnedRef && e.target.matches && e.target.matches('sup.fn-ref')) hideFnPop();
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') hideFnPop();
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.matches && e.target.matches('sup.fn-ref')) {
+    e.preventDefault();
+    fnPinnedRef = e.target;
+    showFnPop(e.target);
+  }
+});
+window.addEventListener('scroll', hideFnPop, { passive: true });
+window.addEventListener('resize', hideFnPop);
 
 function showToast(msg) {
   const el = document.getElementById('toast');
