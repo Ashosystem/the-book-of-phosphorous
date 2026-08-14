@@ -20,6 +20,19 @@ html { scroll-behavior: smooth; }
 body {
   background: var(--bg);
   color: var(--text);
+}
+
+/* Textured backdrop: fixed full-viewport layer so the long chapter pages
+   scroll over it (mobile-safe, unlike background-attachment: fixed). */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: var(--bg) url("images/background.jpeg") center / cover no-repeat;
+}
+
+body {
   font-family: 'Spectral', Georgia, serif;
   font-size: 19px;
   line-height: 1.85;
@@ -392,8 +405,11 @@ body {
 @media (max-width: 580px) {
   body { font-size: 17px; }
 
-  .site-nav { padding: 0 16px; }
-  .nav-logo { font-size: 13px; }
+  .site-nav { padding: 0 12px; gap: 8px; }
+  /* Let the logo shrink and ellipsize so the buttons always fit on screen */
+  .nav-logo { font-size: 12px; flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+  .nav-right { gap: 4px; }
+  .nav-btn { font-size: 11px; padding: 4px 8px; }
 
   .chapter-main { padding-left: 20px; padding-right: 20px; }
 
