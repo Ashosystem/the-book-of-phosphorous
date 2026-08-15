@@ -3833,7 +3833,6 @@ function goTo(n) {
   paint();
   window.scrollTo(0, 0);
   closeDropdown();
-  closeComments();
 }
 
 function paint() {
@@ -3856,38 +3855,11 @@ function paint() {
   document.querySelectorAll('.chapters-dropdown a').forEach(a => {
     a.classList.toggle('current', Number(a.dataset.chapter) === currentChapter);
   });
-
-  renderComments();
 }
 
 function readHash() {
   const m = window.location.hash.match(/chapter-(\d+)/);
   return m ? Number(m[1]) : 1;
-}
-
-// ── COMMENTS (localStorage) ───────────────────────────────────────────────────
-
-function commentsKey() { return `bop_comments_ch${currentChapter}`; }
-
-function loadComments() {
-  try { return JSON.parse(localStorage.getItem(commentsKey()) || '[]'); }
-  catch { return []; }
-}
-
-function saveComments(list) {
-  localStorage.setItem(commentsKey(), JSON.stringify(list));
-}
-
-function renderComments() {
-  const list = loadComments();
-  const el = document.getElementById('commentsList');
-  if (!list.length) { el.innerHTML = ''; return; }
-  el.innerHTML = list.map(c => `
-    <div class="comment-item">
-      <div class="comment-item-meta">${escHtml(c.name || 'Anonymous')} · ${c.date}</div>
-      <div class="comment-item-text">${escHtml(c.text)}</div>
-    </div>
-  `).join('');
 }
 
 // ── SHARE ─────────────────────────────────────────────────────────────────────
@@ -4015,12 +3987,6 @@ function closeDropdown() {
   document.getElementById('chaptersDropdown').classList.remove('open');
 }
 
-// ── COMMENTS PANEL ────────────────────────────────────────────────────────────
-
-function closeComments() {
-  document.getElementById('commentPanel').classList.remove('open');
-}
-
 // ── INIT ──────────────────────────────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -4056,29 +4022,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // share
   document.getElementById('shareBtn').addEventListener('click', share);
-
-  // comment panel
-  document.getElementById('commentBtn').addEventListener('click', () => {
-    document.getElementById('commentPanel').classList.toggle('open');
-  });
-
-  document.getElementById('closeCommentBtn').addEventListener('click', closeComments);
-
-  document.getElementById('submitComment').addEventListener('click', () => {
-    const text = document.getElementById('commentText').value.trim();
-    if (!text) return;
-    const name = document.getElementById('commentName').value.trim();
-    const list = loadComments();
-    list.push({
-      name,
-      text,
-      date: new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
-    });
-    saveComments(list);
-    document.getElementById('commentText').value = '';
-    renderComments();
-    showToast('Comment posted');
-  });
 
   // download placeholder
   document.getElementById('downloadBtn').addEventListener('click', e => {
