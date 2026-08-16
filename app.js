@@ -32,8 +32,7 @@ function plateFallback(img) {
   }
   .chapter-image { text-align: center; overflow: visible; }
   .chapter-plate { display: block; height: auto; margin: 2.6rem auto;
-    background: #fff; padding: 1.25rem; border-radius: 2px; box-sizing: border-box;
-    max-width: calc(100vw - 32px); }
+    box-sizing: border-box; max-width: calc(100vw - 32px); }
   .chapter-image .chapter-plate { flex-shrink: 0; }
   sup.fn-ref { font-size: .62em; vertical-align: super; line-height: 0; margin-left: 1px;
     cursor: pointer; color: var(--accent, #c9a86c); padding: 0 2px; outline: none; }
@@ -4024,16 +4023,16 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('shareBtn').addEventListener('click', share);
 
   // download placeholder
-  document.getElementById('downloadBtn').addEventListener('click', e => {
-    e.preventDefault();
-    showToast('PDF download coming soon');
-  });
+  // document.getElementById('downloadBtn').addEventListener('click', e => {
+  //   e.preventDefault();
+  //   showToast('PDF download coming soon');
+  // });
 
   // purchase placeholder
-  document.getElementById('purchaseBtn').addEventListener('click', e => {
-    e.preventDefault();
-    showToast('Purchase page coming soon');
-  });
+  // document.getElementById('purchaseBtn').addEventListener('click', e => {
+  //   e.preventDefault();
+  //   showToast('Purchase page coming soon');
+  // });
 
   // hash navigation
   window.addEventListener('hashchange', () => {
