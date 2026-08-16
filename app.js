@@ -46,6 +46,38 @@ function plateFallback(img) {
   .fn-pop.show { opacity: 1; pointer-events: auto; }
   .fn-pop .fn-num { color: var(--accent, #c9a86c); margin-right: .5em; font-size: .8em;
     vertical-align: super; }
+  .share-overlay { position: fixed; inset: 0; z-index: 500;
+    background: rgba(0,0,0,.6); display: flex; align-items: center; justify-content: center;
+    opacity: 0; pointer-events: none; transition: opacity .15s ease; }
+  .share-overlay.open { opacity: 1; pointer-events: auto; }
+  .share-card { background: var(--bg-raised, #232323); border: 1px solid var(--border, #2e2e2e);
+    border-radius: 10px; padding: 22px 24px 24px; width: min(92vw, 470px);
+    box-shadow: 0 18px 50px rgba(0,0,0,.6); }
+  .share-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+  .share-head h3 { font-size: 16px; font-weight: 400; letter-spacing: .02em; margin: 0; }
+  .share-close { background: none; border: none; color: var(--text-muted, #7a7470);
+    font-size: 17px; cursor: pointer; line-height: 1; padding: 4px; }
+  .share-close:hover { color: var(--text, #ece7df); }
+  .share-row { display: flex; gap: 16px; overflow-x: auto; padding: 2px 2px 8px; }
+  .share-opt { display: flex; flex-direction: column; align-items: center; gap: 8px;
+    background: none; border: none; cursor: pointer; flex: 0 0 auto; text-decoration: none;
+    color: var(--text-muted, #7a7470); font-family: 'Spectral', serif; font-size: 12px; }
+  .share-opt:hover { color: var(--text, #ece7df); }
+  .share-opt .share-ic { width: 52px; height: 52px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    border: 1px solid rgba(255,255,255,.08); }
+  .share-copy { display: flex; gap: 8px; margin-top: 16px; }
+  .share-copy input { flex: 1; min-width: 0; background: var(--bg, #1c1c1c);
+    border: 1px solid var(--border, #2e2e2e); color: var(--text-muted, #7a7470);
+    font-family: 'Spectral', serif; font-size: 13px; padding: 9px 12px; }
+  .share-copy button { background: var(--text, #ece7df); border: none; color: var(--bg, #1c1c1c);
+    font-family: 'Spectral', serif; font-size: 13px; padding: 9px 18px; cursor: pointer; }
+  .share-copy button:hover { background: var(--accent, #c9a86c); }
+  @media (max-width: 480px) {
+    .share-card { padding: 18px 16px 20px; }
+    .share-row { gap: 10px; }
+    .share-opt .share-ic { width: 46px; height: 46px; }
+  }
   `;
   const el = document.createElement('style');
   el.textContent = css;
@@ -3754,8 +3786,6 @@ const CHAPTERS = [
         "SO THAT ONE DAY",
         "WE MAY MANIFEST."
       ]},
-      { t: "img", src: "images/plate-14.png", w: 36 },
-      { t: "r", l: ["Contact: sophiaheath@proton.me"] },
     ],
   },
 ];
@@ -3863,24 +3893,96 @@ function readHash() {
 
 // ── SHARE ─────────────────────────────────────────────────────────────────────
 
-async function share() {
+// Each platform is a URL recipe the service publishes for pre-filled shares;
+// the reader lands on their own logged-in compose screen and confirms the post.
+const SHARE_TARGETS = [
+  {
+    name: 'WhatsApp', color: '#25D366',
+    href: (u, t) => `https://wa.me/?text=${encodeURIComponent(t + ' ' + u)}`,
+    icon: '<svg width="26" height="26" viewBox="0 0 24 24"><path fill="#fff" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 1.8a8.2 8.2 0 1 1-4.2 15.3l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 0 1 12 3.8zM8.9 7.3c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.3 3.8 2.1.9 2.6.7 3 .7.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3l-1.7-.8c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.7-.3-1.5-.7-2.3-1.5-.6-.6-1-1.3-1.2-1.6-.1-.2 0-.4.1-.5l.5-.6c.1-.2.1-.3.2-.4 0-.2 0-.3-.1-.4L9.6 7.6c-.2-.3-.4-.3-.7-.3z"/></svg>'
+  },
+  {
+    name: 'X', color: '#111111',
+    href: (u, t) => `https://twitter.com/intent/tweet?url=${encodeURIComponent(u)}&text=${encodeURIComponent(t)}`,
+    icon: '<svg width="22" height="22" viewBox="0 0 24 24"><path fill="#fff" d="M18.2 2h3.3l-7.3 8.4L22.8 22h-6.7l-5.3-6.9L4.8 22H1.4l7.8-9L1.2 2H8l4.8 6.3L18.2 2zm-1.2 18h1.9L6.9 3.9H4.9L17 20z"/></svg>'
+  },
+  {
+    name: 'Facebook', color: '#1877F2',
+    href: (u) => `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(u)}`,
+    icon: '<svg width="26" height="26" viewBox="0 0 24 24"><path fill="#fff" d="M13.4 20.9v-6.4h2.5l.4-2.9h-2.9V9.7c0-.8.3-1.4 1.5-1.4h1.5V5.7c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2.2H8v2.9h2.5v6.4h2.9z"/></svg>'
+  },
+  {
+    name: 'Telegram', color: '#229ED9',
+    href: (u, t) => `https://t.me/share/url?url=${encodeURIComponent(u)}&text=${encodeURIComponent(t)}`,
+    icon: '<svg width="26" height="26" viewBox="0 0 24 24"><path fill="#fff" d="M20.7 4.2 3.6 10.8c-.9.4-.9 1.4 0 1.7l4.4 1.4 1.6 4.9c.3.8 1.3 1 1.8.3l2.2-2.8 4.4 3.2c.7.5 1.6.1 1.8-.8l2.5-12.9c.2-1-.7-1.9-1.6-1.6zM8.8 13.4l8.8-5.6c.2-.1.4.2.2.3l-7.1 6.7-.3 3-1.6-4.4z"/></svg>'
+  },
+  {
+    name: 'Email', color: '#6b6560',
+    href: (u, t) => `mailto:?subject=${encodeURIComponent(t)}&body=${encodeURIComponent(u)}`,
+    icon: '<svg width="26" height="26" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-width="1.7" d="M3 6.5h18v11H3zM3 7l9 6 9-6"/></svg>'
+  },
+];
+
+let shareOverlay = null;
+
+function buildShareDialog() {
+  shareOverlay = document.createElement('div');
+  shareOverlay.className = 'share-overlay';
+  shareOverlay.innerHTML = `
+    <div class="share-card" role="dialog" aria-label="Share">
+      <div class="share-head">
+        <h3>Share</h3>
+        <button class="share-close" aria-label="Close">✕</button>
+      </div>
+      <div class="share-row"></div>
+      <div class="share-copy">
+        <input type="text" readonly aria-label="Page link">
+        <button type="button">Copy</button>
+      </div>
+    </div>`;
+  document.body.appendChild(shareOverlay);
+
+  shareOverlay.addEventListener('click', (e) => {
+    if (e.target === shareOverlay) closeShare();
+  });
+  shareOverlay.querySelector('.share-close').addEventListener('click', closeShare);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeShare();
+  });
+  shareOverlay.querySelector('.share-copy button').addEventListener('click', async () => {
+    const input = shareOverlay.querySelector('.share-copy input');
+    try {
+      await navigator.clipboard.writeText(input.value);
+      showToast('Link copied');
+    } catch {
+      input.select();
+      showToast('Press Ctrl/Cmd+C to copy');
+    }
+  });
+}
+
+function closeShare() {
+  if (shareOverlay) shareOverlay.classList.remove('open');
+}
+
+function share() {
   const ch = CHAPTERS[currentChapter - 1];
   const title = `The Book of Phosphorus — ${ch.title || ('Chapter ' + toRoman(ch.n))}`;
   const url = window.location.href;
 
-  if (navigator.share) {
-    try {
-      await navigator.share({ title, url });
-      return;
-    } catch {}
-  }
+  if (!shareOverlay) buildShareDialog();
 
-  try {
-    await navigator.clipboard.writeText(url);
-    showToast('Link copied');
-  } catch {
-    showToast('Copy the URL to share');
-  }
+  const row = shareOverlay.querySelector('.share-row');
+  row.innerHTML = SHARE_TARGETS.map((p, i) => `
+    <a class="share-opt" href="${p.href(url, title)}"
+       ${p.name === 'Email' ? '' : 'target="_blank" rel="noopener"'}
+       data-i="${i}">
+      <span class="share-ic" style="background:${p.color}">${p.icon}</span>
+      ${p.name}
+    </a>`).join('');
+
+  shareOverlay.querySelector('.share-copy input').value = url;
+  shareOverlay.classList.add('open');
 }
 
 // ── TOAST ─────────────────────────────────────────────────────────────────────
